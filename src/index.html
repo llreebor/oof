@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en" class="h-full">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./css/output.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body class="relative h-full">
+		<div class="wrapper flex min-h-full flex-col px-4">
+			<!-- Desktop First -->
+			<header class="py-[22px]">
+				<div class="mx-auto flex max-w-[1240px] items-center">
+					<a href="#">
+						<img src="./images/global/logo.svg" alt="logo" />
+					</a>
+					<!-- Desktop menu -->
+					<nav
+						id="menu"
+						class="animate-fadeIn z-10 ml-[50px] flex max-sm:hidden"
+					>
+						<ul class="flex items-center gap-9">
+							<!-- Menu Item With Submenu -->
+							<li class="menu-link group relative">
+								<a href="#" class="flex items-center gap-1">
+									<span class="text-brown-800 text-[15px] uppercase">
+										Sports
+									</span>
+									<img
+										class="transition-transform group-hover:rotate-180"
+										src="./images/global/chevron-down.svg"
+										alt="icon"
+									/>
+
+									<!-- Submenu | Dropdown -->
+									<ul
+										class="border-brown-800/10 absolute top-full left-0 hidden min-w-max overflow-hidden rounded-lg border bg-white shadow-sm group-hover:grid"
+									>
+										<li>
+											<a
+												class="text-brown-800/80 hover:text-brown-800 flex px-4 py-2 text-sm uppercase transition-colors hover:bg-gray-100"
+												href="#"
+											>
+												football
+											</a>
+										</li>
+										<li>
+											<a
+												class="text-brown-800/80 hover:text-brown-800 flex px-4 py-2 text-sm uppercase transition-colors hover:bg-gray-100"
+												href="#"
+											>
+												basketball
+											</a>
+										</li>
+										<li>
+											<a
+												class="text-brown-800/80 hover:text-brown-800 flex px-4 py-2 text-sm uppercase transition-colors hover:bg-gray-100"
+												href="#"
+											>
+												tennis
+											</a>
+										</li>
+									</ul>
+								</a>
+							</li>
+
+							<!-- Menu Item With Submenu -->
+							<li class="menu-link group relative">
+								<a href="#" class="flex items-center gap-1">
+									<span class="text-brown-800 text-[15px] uppercase">
+										Company
+									</span>
+									<img
+										class="transition-transform group-hover:rotate-180"
+										src="./images/global/chevron-down.svg"
+										alt="icon"
+									/>
+
+									<!-- Submenu | Dropdown -->
+									<ul
+										class="border-brown-800/10 absolute top-full left-0 hidden min-w-max overflow-hidden rounded-lg border bg-white shadow-sm group-hover:grid"
+									>
+										<li>
+											<a
+												class="text-brown-800/80 hover:text-brown-800 flex px-4 py-2 text-sm uppercase transition-colors hover:bg-gray-100"
+												href="#"
+											>
+												Nike
+											</a>
+										</li>
+										<li>
+											<a
+												class="text-brown-800/80 hover:text-brown-800 flex px-4 py-2 text-sm uppercase transition-colors hover:bg-gray-100"
+												href="#"
+											>
+												Reebok
+											</a>
+										</li>
+										<li>
+											<a
+												class="text-brown-800/80 hover:text-brown-800 flex px-4 py-2 text-sm uppercase transition-colors hover:bg-gray-100"
+												href="#"
+											>
+												Adidas
+											</a>
+										</li>
+									</ul>
+								</a>
+							</li>
+						</ul>
+					</nav>
+
+					<!-- Auth Buttons -->
+					<div class="ml-auto flex items-center gap-6 max-sm:hidden">
+						<a
+							href="#"
+							class="text-brown-800 after:bg-brown-800 relative text-[15px] uppercase after:absolute after:-bottom-1 after:left-0 after:h-px after:w-full after:scale-0 after:transition-all hover:after:scale-100"
+						>
+							Log in
+						</a>
+						<a
+							href="#"
+							class="text-navy border-navy hover:bg-navy flex max-w-fit justify-center rounded-full border px-4 py-2.5 text-[15px] font-semibold uppercase transition-colors hover:text-white"
+						>
+							try now
+						</a>
+					</div>
+
+					<!--  Mobile menu -->
+					<div
+						id="mobile-menu"
+						class="mobile-menu group fixed top-0 -left-full z-20 h-full w-full bg-black/70"
+					>
+						<div
+							class="flex h-full w-0 flex-col space-y-4 divide-y divide-gray-200 overflow-auto bg-white px-4 py-[22px] transition-all duration-300 group-[.open]:w-[80%]"
+						>
+							<a href="#" class="pb-[22px]">
+								<img src="./images/global/logo.svg" alt="logo" />
+							</a>
+
+							<nav class="flex-1">
+								<ul class="divide-y divide-gray-200">
+									<!-- Menu Item With Submenu -->
+									<li
+										class="with-submenu menu-link group text-brown-800 relative py-3 text-xl hover:text-current"
+									>
+										<div class="flex flex-col gap-2">
+											<!-- Submenu Trigger -->
+											<button
+												class="submenu-trigger flex items-center justify-between gap-2"
+											>
+												<span class="text-brown-800 pointer-events-none">
+													Sports
+												</span>
+
+												<img
+													class="pointer-events-none transition-transform group-[.active]:rotate-180"
+													src="./images/global/chevron-down.svg"
+													alt="icon"
+												/>
+											</button>
+
+											<!-- Submenu Content -->
+											<div
+												class="submenu grid grid-rows-[0fr] transition-all duration-500 group-[.active]:grid-rows-[1fr]"
+											>
+												<div class="overflow-hidden">
+													<ul>
+														<li>
+															<a
+																href="#"
+																class="flex px-4 py-2 text-base uppercase hover:text-black"
+															>
+																Football
+															</a>
+														</li>
+														<li>
+															<a
+																href="#"
+																class="flex px-4 py-2 text-base uppercase hover:text-black"
+															>
+																basketball
+															</a>
+														</li>
+														<li>
+															<a
+																href="#"
+																class="flex px-4 py-2 text-base uppercase hover:text-black"
+															>
+																tennis
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<!-- Menu Item With Submenu -->
+									<li
+										class="with-submenu menu-link group text-brown-800 relative py-3 text-xl hover:text-current"
+									>
+										<div class="flex flex-col gap-2">
+											<!-- Submenu Trigger -->
+											<button
+												class="submenu-trigger flex items-center justify-between gap-2"
+											>
+												<span class="text-brown-800 pointer-events-none">
+													Company
+												</span>
+
+												<img
+													class="pointer-events-none transition-transform group-[.active]:rotate-180"
+													src="./images/global/chevron-down.svg"
+													alt="icon"
+												/>
+											</button>
+
+											<!-- Submenu Content -->
+											<div
+												class="submenu grid grid-rows-[0fr] transition-all duration-500 group-[.active]:grid-rows-[1fr]"
+											>
+												<div class="overflow-hidden">
+													<ul>
+														<li>
+															<a
+																href="#"
+																class="flex px-4 py-2 text-base uppercase hover:text-black"
+															>
+																Nike
+															</a>
+														</li>
+														<li>
+															<a
+																href="#"
+																class="flex px-4 py-2 text-base uppercase hover:text-black"
+															>
+																Reebok
+															</a>
+														</li>
+														<li>
+															<a
+																href="#"
+																class="flex px-4 py-2 text-base uppercase hover:text-black"
+															>
+																Adidas
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</nav>
+
+							<!-- Auth Buttons -->
+							<div class="mt-auto flex w-full flex-col items-center gap-4">
+								<a
+									href="#"
+									class="text-brown-800 after:bg-brown-800 relative w-full max-w-full text-center text-[15px] uppercase after:absolute after:-bottom-1 after:left-0 after:h-px after:w-full after:scale-0 after:transition-all hover:after:scale-100"
+								>
+									Log in
+								</a>
+								<a
+									href="#"
+									class="text-navy border-navy hover:bg-navy flex w-full max-w-full justify-center rounded-full border px-4 py-2.5 text-center text-[15px] font-semibold uppercase transition-colors hover:text-white"
+								>
+									try now
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- Burger Button -->
+					<button
+						id="burger"
+						class="group relative z-20 hidden h-5 w-[30px] max-sm:ml-auto max-sm:block"
+					>
+						<span
+							class="absolute top-0 left-0 flex h-[2px] w-[30px] bg-black transition-transform group-[.active]:translate-y-2 group-[.active]:rotate-45 group-[.active]:bg-black"
+						></span>
+						<span
+							class="absolute top-1/2 left-0 flex h-[2px] w-[30px] translate-x-0 -translate-y-1/2 bg-black transition-transform group-[.active]:opacity-0"
+						></span>
+						<span
+							class="absolute bottom-0 left-0 flex h-[2px] w-[30px] bg-black transition-transform group-[.active]:-translate-y-[10px] group-[.active]:-rotate-45 group-[.active]:bg-black"
+						></span>
+					</button>
+				</div>
+			</header>
+			<!-- Main Content -->
+			<main class="flex-auto">
+				<section>
+					<div class="mx-auto mt-10 max-w-[1140px] space-y-10">
+						<h1
+							class="text-navy mx-auto max-w-[907px] text-center text-[68px] leading-[1.09] tracking-[-2.75px] uppercase"
+						>
+							TURN YOUR
+							<span
+								class="bg-linear-(--gradient-text) bg-clip-text font-bold text-transparent"
+							>
+								SPORTS FOOTAGE
+							</span>
+							INTO
+							<span
+								class="bg-linear-(--gradient-text) bg-clip-text font-bold text-transparent"
+							>
+								ACTIONABLE INSIGHTS.
+							</span>
+						</h1>
+						<p
+							class="text-navy mx-auto max-w-[700px] text-justify text-[26px] leading-[1.2] font-light tracking-[-1.04px]"
+						>
+							OOF is an AI-powered video analysis tool designed to maximize the
+							amount of insights you can extract from your sports footage.
+						</p>
+						<div class="mx-auto flex w-full max-w-[291px]">
+							<a href="#" class="btn btn-gradient text-center">Get Started</a>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<!-- Footer -->
+			<footer class="flex h-40 items-center justify-center bg-slate-300">
+				FOOTER
+			</footer>
+		</div>
+
+		<!-- JS -->
+		<script src="./js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+/* Variables */
+@theme {
+	/* Container */
+	--container-padding: 0 16px;
+	--container-max-width: 1332px;
+	/* Fonts */
+	--font-abeezee: "ABeeZee", sans-serif;
+	--font-chakra: "Chakra Petch", sans-serif;
+	--font-public: "Public Sans", sans-serif;
+	/* Colors */
+	--color-navy: #02234f;
+	--color-brown-800: #281d1b;
+	--gradient-btn: 180deg, #02234f 0%, #0550b5 100%;
+	--gradient-text: to right, #02234f 0%, #0550b5 100%;
+
+	--redness: red;
+}
+
+/* Container max-width & paddings */
+@utility container {
+	@apply mx-auto max-w-[var(--container-max-width)] p-[var(--container-padding)];
+}
+
+@layer base {
+	body {
+		@apply font-chakra bg-[#F9FFFE];
+	}
+	section {
+		@apply py-10;
+	}
+}
+@layer components {
+	.btn {
+		@apply flex w-full items-center justify-center gap-3 rounded-full border p-5 text-center text-xl text-white uppercase;
+	}
+}
+@layer utilities {
+	/* Mobile Menu With Drawer */
+	.mobile-menu.open {
+		@apply left-0;
+	}
+
+	.btn.btn-gradient {
+		@apply border-none bg-linear-(--gradient-btn) transition-colors;
+	}
+}
