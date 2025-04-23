@@ -1,4 +1,5 @@
 # TODO:
 
 - add videos
-- gradient hover
+- gradient button hover
+- cards hover gradient

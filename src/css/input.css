@@ -19,6 +19,8 @@
 		#0549a3 64.9%, #002c66 85.82%, #02234f 100%;
 	--gradient-card:
 		168deg, rgba(210, 229, 255, 0.16) 0.43%, rgba(43, 49, 56, 0.32) 25.19%;
+
+	--gradient-card-radial: 50% 50% at 50% 50%, #f9fffe 0%, #ddedff 100%;
 }
 
 /* Container max-width & paddings */
@@ -47,5 +49,8 @@
 
 	.btn.btn-gradient {
 		@apply border-none bg-linear-(--gradient-btn) transition-colors;
+	}
+	.btn.btn-white {
+		@apply hover:text-navy rounded-full text-[19px] leading-[1.05] tracking-[5.7px] text-[#F7FEFF] uppercase transition-colors hover:bg-white;
 	}
 }

@@ -297,7 +297,7 @@
 			</header>
 			<!-- Main Content -->
 			<main class="flex-auto">
-				<!-- Hero -->
+				<!-- TODO:[video] Hero -->
 				<section
 					class="relative after:absolute after:bottom-0 after:left-0 after:-z-10 after:h-[300px] after:w-full after:bg-linear-(--gradient-hero)"
 				>
@@ -337,30 +337,455 @@
 					</div>
 				</section>
 
-				<!-- Your personal performance analyst -->
+				<!-- TODO:[card hover gradient] Your personal performance analyst -->
 				<section class="bg-navy py-[100px] max-sm:py-10">
-					<div class="mx-auto max-w-[1200px] px-4">
+					<div class="mx-auto max-w-[1220px] px-4">
 						<!-- Section Header -->
 						<div class="mx-auto max-w-[664px]">
 							<h2
-								class="text-whitye text-center text-[54px] leading-none font-semibold text-white uppercase"
+								class="text-center text-[54px] leading-none font-semibold text-white uppercase max-sm:text-2xl"
 							>
 								Your personal performance analyst
 							</h2>
 							<p
-								class="mt-3 text-center text-[28px] leading-[1.4] font-light text-white"
+								class="mt-3 text-center text-[28px] leading-[1.4] font-light text-white max-sm:text-lg"
 							>
 								Built for athletes across sports
 							</p>
 						</div>
 
 						<!-- Content -->
-						<div class="flex flex-wrap items-center">
+						<div class="mt-9 flex flex-wrap items-center justify-center gap-4">
+							<!-- Card -->
 							<div
-								class="bg-linear-card rounded-xl border-[0.5px] border-[#9EC8FF] px-10 py-[28px]"
+								class="group w-full max-w-[380px] space-y-4 rounded-xl border-[0.5px] border-[#9EC8FF] bg-linear-(--gradient-card) px-10 py-[28px] max-sm:p-8"
 							>
+								<!-- Image -->
 								<div class="flex items-center justify-center">
 									<img src="./images/home/card-image-1.png" alt="card image" />
+								</div>
+								<!-- Title -->
+								<div class="flex items-center justify-center gap-2">
+									<img
+										class="max-sm:w-10"
+										src="./images/home/card-title-icon-1.svg"
+										alt="icon"
+									/>
+									<h2
+										class="text-[38px] font-bold tracking-[-1.509px] text-white max-sm:text-2xl"
+									>
+										Gymnastics
+									</h2>
+								</div>
+
+								<!-- List -->
+								<div class="space-y-[6px]">
+									<ul class="space-y-[6px]">
+										<li
+											class="flex items-center gap-4 rounded-xl bg-white/20 px-3 py-2"
+										>
+											<img src="./images/icons/rotate.svg" alt="icon" />
+											<p
+												class="text-[19px] font-semibold text-white max-sm:text-base"
+											>
+												3D rotation speed
+											</p>
+										</li>
+										<li
+											class="flex items-center gap-4 rounded-xl bg-white/20 px-3 py-2"
+										>
+											<img src="./images/icons/time.svg" alt="icon" />
+											<p
+												class="text-[19px] font-semibold text-white max-sm:text-base"
+											>
+												Apparatus time
+											</p>
+										</li>
+										<li
+											class="flex items-center gap-4 rounded-xl bg-white/20 px-3 py-2"
+										>
+											<img src="./images/icons/hand.svg" alt="icon" />
+											<p
+												class="text-[19px] font-semibold text-white max-sm:text-base"
+											>
+												Hand & foot impacts
+											</p>
+										</li>
+									</ul>
+
+									<button
+										class="tracking-[ -0.397px] w-full cursor-pointer rounded-xl px-4 py-2 text-center font-semibold text-white hover:bg-white/10"
+									>
+										+ More
+									</button>
+								</div>
+
+								<!-- Explore Button -->
+								<a href="#" class="btn btn-white">Explore</a>
+							</div>
+							<!-- Card -->
+							<div
+								class="group w-full max-w-[380px] space-y-4 rounded-xl border-[0.5px] border-[#9EC8FF] bg-linear-(--gradient-card) px-10 py-[28px] max-sm:p-8"
+							>
+								<!-- Image -->
+								<div class="flex items-center justify-center">
+									<img src="./images/home/card-image-2.png" alt="card image" />
+								</div>
+								<!-- Title -->
+								<div class="flex items-center justify-center gap-2">
+									<img
+										class="max-sm:w-10"
+										src="./images/home/card-title-icon-2.svg"
+										alt="icon"
+									/>
+									<h2
+										class="text-[38px] font-bold tracking-[-1.509px] text-white max-sm:text-2xl"
+									>
+										Track & Field
+									</h2>
+								</div>
+
+								<!-- List -->
+								<div class="space-y-[6px]">
+									<ul class="space-y-[6px]">
+										<li
+											class="flex items-center gap-4 rounded-xl bg-white/20 px-3 py-2"
+										>
+											<img src="./images/icons/shoe.svg" alt="icon" />
+											<p
+												class="text-[19px] font-semibold text-white max-sm:text-base"
+											>
+												Contact
+											</p>
+										</li>
+										<li
+											class="flex items-center gap-4 rounded-xl bg-white/20 px-3 py-2"
+										>
+											<img src="./images/icons/tempo.svg" alt="icon" />
+											<p
+												class="text-[19px] font-semibold text-white max-sm:text-base"
+											>
+												Tempo
+											</p>
+										</li>
+										<li
+											class="flex items-center gap-4 rounded-xl bg-white/20 px-3 py-2"
+										>
+											<img src="./images/icons/jump.svg" alt="icon" />
+											<p
+												class="text-[19px] font-semibold text-white max-sm:text-base"
+											>
+												Hip & shoulder lag
+											</p>
+										</li>
+									</ul>
+
+									<button
+										class="tracking-[ -0.397px] w-full cursor-pointer rounded-xl px-4 py-2 text-center font-semibold text-white hover:bg-white/10"
+									>
+										+ More
+									</button>
+								</div>
+
+								<!-- Explore Button -->
+								<a href="#" class="btn btn-white">Explore</a>
+							</div>
+							<!-- Card -->
+							<div
+								class="group w-full max-w-[380px] space-y-4 rounded-xl border-[0.5px] border-[#9EC8FF] bg-linear-(--gradient-card) px-10 py-[28px] max-sm:p-8"
+							>
+								<!-- Image -->
+								<div class="flex items-center justify-center">
+									<img src="./images/home/card-image-3.png" alt="card image" />
+								</div>
+								<!-- Title -->
+								<div class="flex items-center justify-center gap-2">
+									<img
+										class="max-sm:w-10"
+										src="./images/home/card-title-icon-3.svg"
+										alt="icon"
+									/>
+									<h2
+										class="text-[38px] font-bold tracking-[-1.509px] text-white max-sm:text-2xl"
+									>
+										Figure Skate
+									</h2>
+								</div>
+
+								<!-- List -->
+								<div class="space-y-[6px]">
+									<ul class="space-y-[6px]">
+										<li
+											class="flex items-center gap-4 rounded-xl bg-white/20 px-3 py-2"
+										>
+											<img src="./images/icons/rotate.svg" alt="icon" />
+											<p
+												class="text-[19px] font-semibold text-white max-sm:text-base"
+											>
+												Angular velocity
+											</p>
+										</li>
+										<li
+											class="flex items-center gap-4 rounded-xl bg-white/20 px-3 py-2"
+										>
+											<img src="./images/icons/jump.svg" alt="icon" />
+											<p
+												class="text-[19px] font-semibold text-white max-sm:text-base"
+											>
+												Air time
+											</p>
+										</li>
+										<li
+											class="flex items-center gap-4 rounded-xl bg-white/20 px-3 py-2"
+										>
+											<img src="./images/icons/content.svg" alt="icon" />
+											<p
+												class="text-[19px] font-semibold text-white max-sm:text-base"
+											>
+												Synchronicity
+											</p>
+										</li>
+									</ul>
+
+									<button
+										class="tracking-[ -0.397px] w-full cursor-pointer rounded-xl px-4 py-2 text-center font-semibold text-white hover:bg-white/10"
+									>
+										+ More
+									</button>
+								</div>
+
+								<!-- Explore Button -->
+								<a href="#" class="btn btn-white">Explore</a>
+							</div>
+							<!-- Card -->
+							<div
+								class="group w-full max-w-[380px] space-y-4 rounded-xl border-[0.5px] border-[#9EC8FF] bg-linear-(--gradient-card) px-10 py-[28px] max-sm:p-8"
+							>
+								<!-- Image -->
+								<div class="flex items-center justify-center">
+									<img src="./images/home/card-image-4.png" alt="card image" />
+								</div>
+								<!-- Title -->
+								<div class="flex items-center justify-center gap-2">
+									<img
+										class="max-sm:w-10"
+										src="./images/home/card-title-icon-4.svg"
+										alt="icon"
+									/>
+									<h2
+										class="text-[38px] font-bold tracking-[-1.509px] text-white max-sm:text-2xl"
+									>
+										Swim
+									</h2>
+								</div>
+
+								<!-- List -->
+								<div class="space-y-[6px]">
+									<ul class="space-y-[6px]">
+										<li
+											class="flex items-center gap-4 rounded-xl bg-white/20 px-3 py-2"
+										>
+											<img src="./images/icons/accelerometer.svg" alt="icon" />
+											<p
+												class="text-[19px] font-semibold text-white max-sm:text-base"
+											>
+												3D acceleration
+											</p>
+										</li>
+										<li
+											class="flex items-center gap-4 rounded-xl bg-white/20 px-3 py-2"
+										>
+											<img src="./images/icons/hand.svg" alt="icon" />
+											<p
+												class="text-[19px] font-semibold text-white max-sm:text-base"
+											>
+												Hand force
+											</p>
+										</li>
+										<li
+											class="flex items-center gap-4 rounded-xl bg-white/20 px-3 py-2"
+										>
+											<img
+												src="./images/icons/wave-arrow-down.svg"
+												alt="icon"
+											/>
+											<p
+												class="text-[19px] font-semibold text-white max-sm:text-base"
+											>
+												Underwater kicks
+											</p>
+										</li>
+									</ul>
+
+									<button
+										class="tracking-[ -0.397px] w-full cursor-pointer rounded-xl px-4 py-2 text-center font-semibold text-white hover:bg-white/10"
+									>
+										+ More
+									</button>
+								</div>
+
+								<!-- Explore Button -->
+								<a href="#" class="btn btn-white">Explore</a>
+							</div>
+							<!-- Card -->
+							<div
+								class="group w-full max-w-[380px] space-y-4 rounded-xl border-[0.5px] border-[#9EC8FF] bg-linear-(--gradient-card) px-10 py-[28px] max-sm:p-8"
+							>
+								<!-- Image -->
+								<div class="flex items-center justify-center">
+									<img src="./images/home/card-image-5.png" alt="card image" />
+								</div>
+								<!-- Title -->
+								<div class="flex items-center justify-center gap-2">
+									<img
+										class="max-sm:w-10"
+										src="./images/home/card-title-5.png"
+										alt="icon"
+									/>
+									<h2
+										class="text-[38px] font-bold tracking-[-1.509px] text-white max-sm:text-2xl"
+									>
+										Dive
+									</h2>
+								</div>
+
+								<!-- List -->
+								<div class="space-y-[6px]">
+									<ul class="space-y-[6px]">
+										<li
+											class="flex items-center gap-4 rounded-xl bg-white/20 px-3 py-2"
+										>
+											<img src="./images/icons/content.svg" alt="icon" />
+											<p
+												class="text-[19px] font-semibold text-white max-sm:text-base"
+											>
+												Synchronicity
+											</p>
+										</li>
+										<li
+											class="flex items-center gap-4 rounded-xl bg-white/20 px-3 py-2"
+										>
+											<img src="./images/icons/rotate.svg" alt="icon" />
+											<p
+												class="text-[19px] font-semibold text-white max-sm:text-base"
+											>
+												Rotations
+											</p>
+										</li>
+										<li
+											class="flex items-center gap-4 rounded-xl bg-white/20 px-3 py-2"
+										>
+											<img
+												src="./images/icons/arrow-collapse-down.svg"
+												alt="icon"
+											/>
+											<p
+												class="text-[19px] font-semibold text-white max-sm:text-base"
+											>
+												Entry
+											</p>
+										</li>
+									</ul>
+
+									<button
+										class="tracking-[ -0.397px] w-full cursor-pointer rounded-xl px-4 py-2 text-center font-semibold text-white hover:bg-white/10"
+									>
+										+ More
+									</button>
+								</div>
+
+								<!-- Explore Button -->
+								<a href="#" class="btn btn-white">Explore</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- TODO:[video]  How OOF Works -->
+				<section class="py-[100px] max-sm:py-10">
+					<div class="mx-auto max-w-[1220px] px-4">
+						<h2
+							class="text-navy flex items-center justify-center gap-6 text-center text-[54px] font-semibold max-sm:gap-3 max-sm:text-2xl"
+						>
+							How
+							<img class="max-sm:w-20" src="./images/home/OOF.svg" alt="oof" />
+							Works
+						</h2>
+
+						<!-- Video -->
+						<div class="mt-3">
+							<img src="./images/home/video-how.jpg" alt="video" />
+						</div>
+					</div>
+				</section>
+
+				<!-- As seen on & Supporting -->
+				<section class="py-[100px] max-sm:py-10">
+					<div class="mx-auto max-w-[1140px] space-y-8 px-4">
+						<div>
+							<h2
+								class="text-navy flex items-center justify-center gap-6 text-center text-[58px] font-semibold max-sm:gap-3 max-sm:text-2xl"
+							>
+								As seen on
+							</h2>
+
+							<!-- Partners -->
+							<div
+								class="mt-3 grid grid-cols-4 gap-2.5 max-md:grid-cols-2 max-sm:grid-cols-1"
+							>
+								<div
+									class="flex h-[120px] items-center justify-center rounded-lg border-[0.3px] border-[#9EC8FF] bg-radial-(--gradient-card-radial) px-6 py-4 md:h-[206px]"
+								>
+									<img src="./images/home/partner-1.png" alt="partner-image" />
+								</div>
+								<div
+									class="flex h-[120px] items-center justify-center rounded-lg border-[0.3px] border-[#9EC8FF] bg-radial-(--gradient-card-radial) px-6 py-4 md:h-[206px]"
+								>
+									<img src="./images/home/partner-2.png" alt="partner-image" />
+								</div>
+								<div
+									class="flex h-[120px] items-center justify-center rounded-lg border-[0.3px] border-[#9EC8FF] bg-radial-(--gradient-card-radial) px-6 py-4 md:h-[206px]"
+								>
+									<img src="./images/home/partner-3.png" alt="partner-image" />
+								</div>
+								<div
+									class="flex h-[120px] items-center justify-center rounded-lg border-[0.3px] border-[#9EC8FF] bg-radial-(--gradient-card-radial) px-6 py-4 md:h-[206px]"
+								>
+									<img src="./images/home/partner-4.png" alt="partner-image" />
+								</div>
+							</div>
+						</div>
+
+						<div>
+							<h2
+								class="text-navy flex items-center justify-center gap-6 text-center text-[40px] font-semibold max-sm:gap-3 max-sm:text-2xl"
+							>
+								Supporting
+							</h2>
+
+							<!-- Partners -->
+							<div
+								class="mt-3 grid grid-cols-4 gap-2.5 max-md:grid-cols-2 max-sm:grid-cols-1"
+							>
+								<div
+									class="flex items-center justify-center rounded-lg border-[0.3px] border-[#9EC8FF] bg-radial-(--gradient-card-radial) px-6 py-4 md:h-[206px]"
+								>
+									<img src="./images/home/partner-5.png" alt="partner-image" />
+								</div>
+								<div
+									class="flex items-center justify-center rounded-lg border-[0.3px] border-[#9EC8FF] bg-radial-(--gradient-card-radial) px-6 py-4 md:h-[206px]"
+								>
+									<img src="./images/home/partner-6.png" alt="partner-image" />
+								</div>
+								<div
+									class="flex items-center justify-center rounded-lg border-[0.3px] border-[#9EC8FF] bg-radial-(--gradient-card-radial) px-6 py-4 md:h-[206px]"
+								>
+									<img src="./images/home/partner-7.png" alt="partner-image" />
+								</div>
+								<div
+									class="flex items-center justify-center rounded-lg border-[0.3px] border-[#9EC8FF] bg-radial-(--gradient-card-radial) px-6 py-4 md:h-[206px]"
+								>
+									<img src="./images/home/partner-8.png" alt="partner-image" />
 								</div>
 							</div>
 						</div>
