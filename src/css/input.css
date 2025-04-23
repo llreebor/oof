@@ -12,6 +12,8 @@
 	/* Colors */
 	--color-navy: #02234f;
 	--color-brown-800: #281d1b;
+
+	/* Gradients */
 	--gradient-btn: 180deg, #02234f 0%, #0550b5 100%;
 	--gradient-text: to right, #02234f 0%, #0550b5 100%;
 	--gradient-hero:
@@ -19,8 +21,11 @@
 		#0549a3 64.9%, #002c66 85.82%, #02234f 100%;
 	--gradient-card:
 		168deg, rgba(210, 229, 255, 0.16) 0.43%, rgba(43, 49, 56, 0.32) 25.19%;
-
 	--gradient-card-radial: 50% 50% at 50% 50%, #f9fffe 0%, #ddedff 100%;
+	--gradient-cta-bg: 180deg, #f9fffe 0%, #c5defb 100%;
+
+	/* Drop Shadow */
+	--drop-shadow-cta: drop-shadow(0px 15.036px 28.343px rgba(38, 131, 238, 0.1));
 }
 
 /* Container max-width & paddings */
