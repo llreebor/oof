@@ -16,6 +16,7 @@
 	/* Gradients */
 	--gradient-btn: 180deg, #02234f 0%, #0550b5 100%;
 	--gradient-text: to right, #02234f 0%, #0550b5 100%;
+	--gradient-lightblue-text: to right, #69afff 0%, #2683ee 100%;
 	--gradient-hero:
 		180deg, rgba(249, 254, 254, 0) 0%, rgba(5, 73, 163, 0.3) 29.33%,
 		#0549a3 64.9%, #002c66 85.82%, #02234f 100%;
