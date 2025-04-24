@@ -25,8 +25,23 @@
 	--gradient-card-radial: 50% 50% at 50% 50%, #f9fffe 0%, #ddedff 100%;
 	--gradient-cta-bg: 180deg, #f9fffe 0%, #c5defb 100%;
 
+	--gradient-radial-box:
+		radial-gradient(
+			50% 50% at 50% 50%,
+			rgba(188, 233, 255, 0.35) 0%,
+			rgba(197, 224, 255, 0) 100%
+		),
+		linear-gradient(
+			168deg,
+			rgba(210, 229, 255, 0.16) 0.43%,
+			rgba(43, 49, 56, 0.32) 25.19%
+		);
 	/* Drop Shadow */
 	--drop-shadow-cta: drop-shadow(0px 15.036px 28.343px rgba(38, 131, 238, 0.1));
+	--drop-shadow-sport-page: drop-shadow(
+		0px 16.019px 30.196px rgba(38, 131, 238, 0.1)
+	);
+	--drop-shadow-sport-image: 0px 16.019px 30.196px 0px rgba(38, 131, 238, 0.15);
 }
 
 /* Container max-width & paddings */
@@ -46,6 +61,19 @@
 	.btn {
 		@apply flex w-full items-center justify-center gap-3 rounded-full border p-5 text-center text-xl text-white uppercase max-sm:px-4 max-sm:py-3 max-sm:text-lg;
 	}
+	.box {
+		background:
+			radial-gradient(
+				50% 50% at 50% 50%,
+				rgba(188, 233, 255, 0.35) 0%,
+				rgba(197, 224, 255, 0) 100%
+			),
+			linear-gradient(
+				168deg,
+				rgba(210, 229, 255, 0.16) 0.43%,
+				rgba(43, 49, 56, 0.32) 25.19%
+			);
+	}
 }
 @layer utilities {
 	/* Mobile Menu With Drawer */
@@ -58,5 +86,8 @@
 	}
 	.btn.btn-white {
 		@apply hover:text-navy rounded-full text-[19px] leading-[1.05] tracking-[5.7px] text-[#F7FEFF] uppercase transition-colors hover:bg-white;
+	}
+	.btn.btn-outline {
+		@apply text-navy border-navy hover:bg-navy rounded-full text-[18px] leading-[1.05] font-semibold tracking-[5.7px] uppercase transition-colors hover:text-white;
 	}
 }
