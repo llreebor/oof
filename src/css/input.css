@@ -5,13 +5,16 @@
 	/* Container */
 	--container-padding: 0 16px;
 	--container-max-width: 1332px;
+
 	/* Fonts */
 	--font-abeezee: "ABeeZee", sans-serif;
 	--font-chakra: "Chakra Petch", sans-serif;
 	--font-public: "Public Sans", sans-serif;
+
 	/* Colors */
 	--color-navy: #02234f;
 	--color-brown-800: #281d1b;
+	--color-gray-400: #a0aec0;
 
 	/* Gradients */
 	--gradient-btn: 180deg, #02234f 0%, #0550b5 100%;
@@ -25,7 +28,8 @@
 		168deg, rgba(210, 229, 255, 0.16) 0.43%, rgba(43, 49, 56, 0.32) 25.19%;
 	--gradient-card-radial: 50% 50% at 50% 50%, #f9fffe 0%, #ddedff 100%;
 	--gradient-cta-bg: 180deg, #f9fffe 0%, #c5defb 100%;
-
+	--gradient-sidebar:
+		112deg, rgba(6, 11, 38, 0.94) 59.3%, rgba(26, 31, 55, 0) 100%;
 	--gradient-radial-box:
 		radial-gradient(
 			50% 50% at 50% 50%,
@@ -38,7 +42,8 @@
 			rgba(43, 49, 56, 0.32) 25.19%
 		);
 
-	/* Drop Shadow */
+	/* Shadow */
+	--shadow-xs: 0px 3.5px 5.5px 0px rgba(0, 0, 0, 0.02);
 	--drop-shadow-cta: drop-shadow(0px 15.036px 28.343px rgba(38, 131, 238, 0.1));
 	--drop-shadow-sport-page: drop-shadow(
 		0px 16.019px 30.196px rgba(38, 131, 238, 0.1)
@@ -75,6 +80,10 @@
 				rgba(210, 229, 255, 0.16) 0.43%,
 				rgba(43, 49, 56, 0.32) 25.19%
 			);
+	}
+	.stroke-text {
+		-webkit-text-stroke-width: 1px;
+		-webkit-text-stroke-color: #000;
 	}
 }
 @layer utilities {
