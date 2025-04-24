@@ -7,9 +7,14 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-slate-200: oklch(92.9% 0.013 255.508);
+    --color-slate-600: oklch(44.6% 0.043 257.281);
+    --color-slate-800: oklch(27.9% 0.041 260.031);
+    --color-slate-900: oklch(20.8% 0.042 265.755);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-400: #a0aec0;
+    --color-gray-900: oklch(21% 0.034 264.665);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -33,6 +38,7 @@
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --tracking-normal: 0em;
+    --leading-normal: 1.5;
     --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
@@ -298,9 +304,6 @@
   .mt-auto {
     margin-top: auto;
   }
-  .mr-\[30px\] {
-    margin-right: 30px;
-  }
   .ml-\[50px\] {
     margin-left: 50px;
   }
@@ -365,12 +368,6 @@
   }
   .w-\[700px\] {
     width: 700px;
-  }
-  .w-\[1600px\] {
-    width: 1600px;
-  }
-  .w-auto {
-    width: auto;
   }
   .w-full {
     width: 100%;
@@ -453,17 +450,17 @@
   .max-w-full {
     max-width: 100%;
   }
+  .min-w-\[120px\] {
+    min-width: 120px;
+  }
   .min-w-\[700px\] {
     min-width: 700px;
   }
   .min-w-\[800px\] {
     min-width: 800px;
   }
-  .min-w-\[900px\] {
-    min-width: 900px;
-  }
-  .min-w-\[1600px\] {
-    min-width: 1600px;
+  .min-w-\[1200px\] {
+    min-width: 1200px;
   }
   .min-w-max {
     min-width: max-content;
@@ -485,9 +482,6 @@
   }
   .table-auto {
     table-layout: auto;
-  }
-  .table-fixed {
-    table-layout: fixed;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -683,9 +677,6 @@
   .overflow-hidden {
     overflow: hidden;
   }
-  .overflow-hidden\! {
-    overflow: hidden !important;
-  }
   .overflow-scroll {
     overflow: scroll;
   }
@@ -751,6 +742,9 @@
   .border-\[\#2683EE\] {
     border-color: #2683EE;
   }
+  .border-\[\#56577A\] {
+    border-color: #56577A;
+  }
   .border-\[\#D9EFF7\] {
     border-color: #D9EFF7;
   }
@@ -783,6 +777,9 @@
   }
   .bg-\[\#1A1F37\] {
     background-color: #1A1F37;
+  }
+  .bg-\[\#1B477A\] {
+    background-color: #1B477A;
   }
   .bg-\[\#060B28\] {
     background-color: #060B28;
@@ -926,6 +923,9 @@
   .px-\[30px\] {
     padding-inline: 30px;
   }
+  .px-\[60px\] {
+    padding-inline: 60px;
+  }
   .px-\[65px\] {
     padding-inline: 65px;
   }
@@ -1067,6 +1067,10 @@
   .text-\[80px\] {
     font-size: 80px;
   }
+  .leading-0 {
+    --tw-leading: calc(var(--spacing) * 0);
+    line-height: calc(var(--spacing) * 0);
+  }
   .leading-\[1\.1\] {
     --tw-leading: 1.1;
     line-height: 1.1;
@@ -1090,6 +1094,10 @@
   .leading-none {
     --tw-leading: 1;
     line-height: 1;
+  }
+  .leading-normal {
+    --tw-leading: var(--leading-normal);
+    line-height: var(--leading-normal);
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -1442,10 +1450,45 @@
       }
     }
   }
+  .hover\:bg-gray-900 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-900);
+      }
+    }
+  }
   .hover\:bg-navy {
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-navy);
+      }
+    }
+  }
+  .hover\:bg-slate-200 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-slate-200);
+      }
+    }
+  }
+  .hover\:bg-slate-600 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-slate-600);
+      }
+    }
+  }
+  .hover\:bg-slate-800 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-slate-800);
+      }
+    }
+  }
+  .hover\:bg-slate-900 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-slate-900);
       }
     }
   }
@@ -1515,16 +1558,6 @@
       max-width: 336px;
     }
   }
-  .max-lg\:w-\[700px\] {
-    @media (width < 64rem) {
-      width: 700px;
-    }
-  }
-  .max-lg\:w-\[800px\] {
-    @media (width < 64rem) {
-      width: 800px;
-    }
-  }
   .max-lg\:max-w-\[220px\] {
     @media (width < 64rem) {
       max-width: 220px;
@@ -1535,21 +1568,6 @@
       max-width: 100%;
     }
   }
-  .max-lg\:min-w-\[700px\] {
-    @media (width < 64rem) {
-      min-width: 700px;
-    }
-  }
-  .max-lg\:min-w-\[800px\] {
-    @media (width < 64rem) {
-      min-width: 800px;
-    }
-  }
-  .max-lg\:min-w-\[1600px\] {
-    @media (width < 64rem) {
-      min-width: 1600px;
-    }
-  }
   .max-lg\:flex-col {
     @media (width < 64rem) {
       flex-direction: column;
@@ -1558,26 +1576,6 @@
   .max-lg\:flex-wrap {
     @media (width < 64rem) {
       flex-wrap: wrap;
-    }
-  }
-  .max-lg\:gap-0 {
-    @media (width < 64rem) {
-      gap: calc(var(--spacing) * 0);
-    }
-  }
-  .max-lg\:overflow-auto {
-    @media (width < 64rem) {
-      overflow: auto;
-    }
-  }
-  .max-lg\:overflow-x-auto {
-    @media (width < 64rem) {
-      overflow-x: auto;
-    }
-  }
-  .max-lg\:overflow-x-scroll {
-    @media (width < 64rem) {
-      overflow-x: scroll;
     }
   }
   .max-lg\:pt-0 {
@@ -1609,11 +1607,6 @@
   .max-md\:grid-cols-2 {
     @media (width < 48rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-  .max-md\:flex-col {
-    @media (width < 48rem) {
-      flex-direction: column;
     }
   }
   .max-md\:space-y-20 {
@@ -1697,6 +1690,16 @@
       flex-direction: column;
     }
   }
+  .max-sm\:items-start {
+    @media (width < 40rem) {
+      align-items: flex-start;
+    }
+  }
+  .max-sm\:justify-start {
+    @media (width < 40rem) {
+      justify-content: flex-start;
+    }
+  }
   .max-sm\:gap-3 {
     @media (width < 40rem) {
       gap: calc(var(--spacing) * 3);
@@ -1751,11 +1754,6 @@
         margin-block-start: calc(calc(var(--spacing) * 10) * var(--tw-space-y-reverse));
         margin-block-end: calc(calc(var(--spacing) * 10) * calc(1 - var(--tw-space-y-reverse)));
       }
-    }
-  }
-  .max-sm\:overflow-scroll {
-    @media (width < 40rem) {
-      overflow: scroll;
     }
   }
   .max-sm\:p-0 {

@@ -170,7 +170,9 @@
 					</aside>
 
 					<!-- Content -->
-					<div class="flex w-full shrink flex-col space-y-6 max-sm:space-y-3">
+					<div
+						class="flex w-full shrink flex-col space-y-6 overflow-hidden max-sm:space-y-3"
+					>
 						<!-- Profile Info -->
 						<div
 							class="w-full rounded-[20px] bg-[linear-gradient(113deg,rgba(6,11,40,0.94)_0%,rgba(10,14,35,0.62)_110.84%)] px-[30px] py-4 max-sm:p-4"
@@ -213,7 +215,7 @@
 						</div>
 
 						<!-- Card -->
-						<div class="flex gap-5 max-lg:flex-col">
+						<div class="flex gap-6 max-lg:flex-col">
 							<!-- Bio -->
 							<div
 								class="overflow-hidden rounded-[20px] bg-[url('../images/dashboard/gradient-image.png')] bg-cover bg-center bg-no-repeat p-8 max-sm:p-4"
@@ -264,7 +266,7 @@
 
 							<!-- Info -->
 							<div
-								class="w-full max-w-[745px] space-y-4 overflow-hidden rounded-[20px] bg-[linear-gradient(139deg,rgba(6,11,40,0.94)_17.44%,rgba(10,14,35,0.49)_93.55%,rgba(10,14,35,0.69)_93.55%)] p-8 max-lg:max-w-full max-sm:p-4"
+								class="w-full max-w-[745px] space-y-4 rounded-[20px] bg-[linear-gradient(113deg,rgba(6,11,40,0.94)_0%,rgba(10,14,35,0.62)_110.84%)] p-8 max-lg:max-w-full max-sm:p-4"
 							>
 								<p class="text-lg text-white">Performance</p>
 
@@ -353,72 +355,95 @@
 							</div>
 						</div>
 
-						<!-- Table -->
+						<!-- Table Long Program -->
 						<div
 							class="w-full rounded-[20px] bg-[linear-gradient(113deg,rgba(6,11,40,0.94)_0%,rgba(10,14,35,0.62)_110.84%)] px-[30px] py-4 max-sm:p-4"
 						>
-							<p class="text-lg text-white">Performance</p>
+							<div
+								class="flex items-center justify-between gap-5 max-sm:flex-col max-sm:items-start"
+							>
+								<p class="text-lg text-white">
+									ISU World Championships 2025 Long Program
+								</p>
+
+								<button
+									class="cursor-pointer rounded-xl bg-[#1B477A] px-[60px] py-2.5 text-[10px] leading-normal text-white backdrop-blur-3xl hover:bg-slate-600"
+								>
+									Trace
+								</button>
+							</div>
 
 							<div class="w-full overflow-x-auto">
-								<table class="mt-2.5 w-full min-w-[700px]">
+								<table class="mt-2.5 w-full min-w-[800px] table-auto">
 									<thead>
-										<tr class="border-b border-gray-400">
-											<th
+										<tr class="border-b border-[#56577A]">
+											<td
 												class="p-3 text-left text-sm text-gray-400 first:pl-0"
 											>
 												Element
-											</th>
-											<th
+											</td>
+											<td
 												class="p-3 text-left text-sm text-gray-400 first:pl-0"
 											>
 												Jump
-											</th>
-											<th
-												class="p-3 text-left text-sm text-gray-400 first:pl-0"
+											</td>
+											<td
+												class="p-3 text-center text-sm text-gray-400 first:pl-0"
 											>
 												Penalty
-											</th>
-											<th
-												class="p-3 text-left text-sm text-gray-400 first:pl-0"
+											</td>
+											<td
+												class="p-3 text-center text-sm text-gray-400 first:pl-0"
 											>
 												GOE
-											</th>
-											<th
-												class="p-3 text-left text-sm text-gray-400 first:pl-0"
+											</td>
+											<td
+												class="p-3 text-center text-sm text-gray-400 first:pl-0"
 											>
 												Max Angular Velocity
-											</th>
-											<th
-												class="p-3 text-left text-sm text-gray-400 first:pl-0"
+											</td>
+											<td
+												class="p-3 text-center text-sm text-gray-400 first:pl-0"
 											>
 												Air Time
-											</th>
-											<th
-												class="p-3 text-left text-sm text-gray-400 first:pl-0"
+											</td>
+											<td
+												class="p-3 text-center text-sm text-gray-400 first:pl-0"
 											>
 												Time to Peak
-											</th>
-											<th
-												class="p-3 text-left text-sm text-gray-400 first:pl-0"
+											</td>
+											<td
+												class="p-3 text-center text-sm text-gray-400 first:pl-0"
 											>
 												Video
-											</th>
-											<th
-												class="p-3 text-left text-sm text-gray-400 first:pl-0"
-											></th>
+											</td>
+											<td
+												class="p-3 text-center text-sm text-gray-400 first:pl-0"
+											></td>
 										</tr>
 									</thead>
 									<tbody>
-										<tr class="border-b border-gray-400">
+										<tr class="border-b border-[#56577A]">
 											<td class="p-3 text-white first:pl-0">1</td>
 											<td class="p-3 text-white first:pl-0">4F</td>
-											<td class="p-3 text-white first:pl-0">q</td>
-											<td class="p-3 text-white first:pl-0">4.24</td>
-											<td class="p-3 text-white first:pl-0">2159</td>
-											<td class="p-3 text-white first:pl-0">0.77</td>
-											<td class="p-3 text-white first:pl-0">0.24</td>
-											<td class="p-3 text-white first:pl-0">
-												<a href="#" class="flex">
+											<td class="p-3 text-center text-white first:pl-0">q</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												4.24
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												2159
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												0.77
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												0.24
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												<a
+													href="#"
+													class="flex items-center justify-center text-center"
+												>
 													<img
 														class="flex"
 														src="./images/dashboard/video-icon.png"
@@ -426,10 +451,269 @@
 													/>
 												</a>
 											</td>
-											<td class="p-3 text-white first:pl-0">
+											<td class="p-3 text-center text-white first:pl-0">
 												<a
 													href="#"
-													class="rounded-full bg-[#891A93] px-6 py-1 text-[10px] text-white"
+													class="rounded-full bg-[#891A93] px-6 py-1 text-center text-[10px] text-white"
+												>
+													Analyze
+												</a>
+											</td>
+										</tr>
+										<tr class="border-b border-[#56577A]">
+											<td class="p-3 text-white first:pl-0">1</td>
+											<td class="p-3 text-white first:pl-0">4F</td>
+											<td class="p-3 text-center text-white first:pl-0">q</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												4.24
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												2159
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												0.77
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												0.24
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												<a
+													href="#"
+													class="flex items-center justify-center text-center"
+												>
+													<img
+														class="flex"
+														src="./images/dashboard/video-icon.png"
+														alt="icon"
+													/>
+												</a>
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												<a
+													href="#"
+													class="rounded-full bg-[#891A93] px-6 py-1 text-center text-[10px] text-white"
+												>
+													Analyze
+												</a>
+											</td>
+										</tr>
+										<tr class="border-b border-[#56577A]">
+											<td class="p-3 text-white first:pl-0">1</td>
+											<td class="p-3 text-white first:pl-0">4F</td>
+											<td class="p-3 text-center text-white first:pl-0">q</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												4.24
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												2159
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												0.77
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												0.24
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												<a
+													href="#"
+													class="flex items-center justify-center text-center"
+												>
+													<img
+														class="flex"
+														src="./images/dashboard/video-icon.png"
+														alt="icon"
+													/>
+												</a>
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												<a
+													href="#"
+													class="rounded-full bg-[#891A93] px-6 py-1 text-center text-[10px] text-white"
+												>
+													Analyze
+												</a>
+											</td>
+										</tr>
+										<tr class="border-b border-[#56577A]">
+											<td class="p-3 text-white first:pl-0">1</td>
+											<td class="p-3 text-white first:pl-0">4F</td>
+											<td class="p-3 text-center text-white first:pl-0">q</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												4.24
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												2159
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												0.77
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												0.24
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												<a
+													href="#"
+													class="flex items-center justify-center text-center"
+												>
+													<img
+														class="flex"
+														src="./images/dashboard/video-icon.png"
+														alt="icon"
+													/>
+												</a>
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												<a
+													href="#"
+													class="rounded-full bg-[#891A93] px-6 py-1 text-center text-[10px] text-white"
+												>
+													Analyze
+												</a>
+											</td>
+										</tr>
+										<tr class="border-b border-[#56577A]">
+											<td class="p-3 text-white first:pl-0">1</td>
+											<td class="p-3 text-white first:pl-0">4F</td>
+											<td class="p-3 text-center text-white first:pl-0">q</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												4.24
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												2159
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												0.77
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												0.24
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												<a
+													href="#"
+													class="flex items-center justify-center text-center"
+												>
+													<img
+														class="flex"
+														src="./images/dashboard/video-icon.png"
+														alt="icon"
+													/>
+												</a>
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												<a
+													href="#"
+													class="rounded-full bg-[#891A93] px-6 py-1 text-center text-[10px] text-white"
+												>
+													Analyze
+												</a>
+											</td>
+										</tr>
+										<tr class="border-b border-[#56577A]">
+											<td class="p-3 text-white first:pl-0">1</td>
+											<td class="p-3 text-white first:pl-0">4F</td>
+											<td class="p-3 text-center text-white first:pl-0">q</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												4.24
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												2159
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												0.77
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												0.24
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												<a
+													href="#"
+													class="flex items-center justify-center text-center"
+												>
+													<img
+														class="flex"
+														src="./images/dashboard/video-icon.png"
+														alt="icon"
+													/>
+												</a>
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												<a
+													href="#"
+													class="rounded-full bg-[#891A93] px-6 py-1 text-center text-[10px] text-white"
+												>
+													Analyze
+												</a>
+											</td>
+										</tr>
+										<tr class="border-b border-[#56577A]">
+											<td class="p-3 text-white first:pl-0">1</td>
+											<td class="p-3 text-white first:pl-0">4F</td>
+											<td class="p-3 text-center text-white first:pl-0">q</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												4.24
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												2159
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												0.77
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												0.24
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												<a
+													href="#"
+													class="flex items-center justify-center text-center"
+												>
+													<img
+														class="flex"
+														src="./images/dashboard/video-icon.png"
+														alt="icon"
+													/>
+												</a>
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												<a
+													href="#"
+													class="rounded-full bg-[#891A93] px-6 py-1 text-center text-[10px] text-white"
+												>
+													Analyze
+												</a>
+											</td>
+										</tr>
+										<tr class="border-b border-[#56577A]">
+											<td class="p-3 text-white first:pl-0">1</td>
+											<td class="p-3 text-white first:pl-0">4F</td>
+											<td class="p-3 text-center text-white first:pl-0">q</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												4.24
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												2159
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												0.77
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												0.24
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												<a
+													href="#"
+													class="flex items-center justify-center text-center"
+												>
+													<img
+														class="flex"
+														src="./images/dashboard/video-icon.png"
+														alt="icon"
+													/>
+												</a>
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												<a
+													href="#"
+													class="rounded-full bg-[#891A93] px-6 py-1 text-center text-[10px] text-white"
 												>
 													Analyze
 												</a>
@@ -440,8 +724,374 @@
 							</div>
 						</div>
 
-						<!-- Footer -->
-						<div>footer</div>
+						<!-- Table Short Program -->
+						<div
+							class="w-full rounded-[20px] bg-[linear-gradient(113deg,rgba(6,11,40,0.94)_0%,rgba(10,14,35,0.62)_110.84%)] px-[30px] py-4 max-sm:p-4"
+						>
+							<div
+								class="flex items-center justify-between gap-5 max-sm:flex-col max-sm:items-start"
+							>
+								<p class="text-lg text-white">
+									ISU World Championships 2025 Short Program
+								</p>
+
+								<button
+									class="cursor-pointer rounded-xl bg-[#1B477A] px-[60px] py-2.5 text-[10px] leading-normal text-white backdrop-blur-3xl hover:bg-slate-600"
+								>
+									Trace
+								</button>
+							</div>
+
+							<div class="w-full overflow-x-auto">
+								<table class="mt-2.5 w-full min-w-[800px] table-auto">
+									<thead>
+										<tr class="border-b border-[#56577A]">
+											<td
+												class="p-3 text-left text-sm text-gray-400 first:pl-0"
+											>
+												Element
+											</td>
+											<td
+												class="p-3 text-left text-sm text-gray-400 first:pl-0"
+											>
+												Jump
+											</td>
+											<td
+												class="p-3 text-center text-sm text-gray-400 first:pl-0"
+											>
+												Penalty
+											</td>
+											<td
+												class="p-3 text-center text-sm text-gray-400 first:pl-0"
+											>
+												GOE
+											</td>
+											<td
+												class="p-3 text-center text-sm text-gray-400 first:pl-0"
+											>
+												Max Angular Velocity
+											</td>
+											<td
+												class="p-3 text-center text-sm text-gray-400 first:pl-0"
+											>
+												Air Time
+											</td>
+											<td
+												class="p-3 text-center text-sm text-gray-400 first:pl-0"
+											>
+												Time to Peak
+											</td>
+											<td
+												class="p-3 text-center text-sm text-gray-400 first:pl-0"
+											>
+												Video
+											</td>
+											<td
+												class="p-3 text-center text-sm text-gray-400 first:pl-0"
+											></td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="border-b border-[#56577A]">
+											<td class="p-3 text-white first:pl-0">1</td>
+											<td class="p-3 text-white first:pl-0">4F</td>
+											<td class="p-3 text-center text-white first:pl-0">q</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												4.24
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												2159
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												0.77
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												0.24
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												<a
+													href="#"
+													class="flex items-center justify-center text-center"
+												>
+													<img
+														class="flex"
+														src="./images/dashboard/video-icon.png"
+														alt="icon"
+													/>
+												</a>
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												<a
+													href="#"
+													class="rounded-full bg-[#891A93] px-6 py-1 text-center text-[10px] text-white"
+												>
+													Analyze
+												</a>
+											</td>
+										</tr>
+										<tr class="border-b border-[#56577A]">
+											<td class="p-3 text-white first:pl-0">1</td>
+											<td class="p-3 text-white first:pl-0">4F</td>
+											<td class="p-3 text-center text-white first:pl-0">q</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												4.24
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												2159
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												0.77
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												0.24
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												<a
+													href="#"
+													class="flex items-center justify-center text-center"
+												>
+													<img
+														class="flex"
+														src="./images/dashboard/video-icon.png"
+														alt="icon"
+													/>
+												</a>
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												<a
+													href="#"
+													class="rounded-full bg-[#891A93] px-6 py-1 text-center text-[10px] text-white"
+												>
+													Analyze
+												</a>
+											</td>
+										</tr>
+										<tr class="border-b border-[#56577A]">
+											<td class="p-3 text-white first:pl-0">1</td>
+											<td class="p-3 text-white first:pl-0">4F</td>
+											<td class="p-3 text-center text-white first:pl-0">q</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												4.24
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												2159
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												0.77
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												0.24
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												<a
+													href="#"
+													class="flex items-center justify-center text-center"
+												>
+													<img
+														class="flex"
+														src="./images/dashboard/video-icon.png"
+														alt="icon"
+													/>
+												</a>
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												<a
+													href="#"
+													class="rounded-full bg-[#891A93] px-6 py-1 text-center text-[10px] text-white"
+												>
+													Analyze
+												</a>
+											</td>
+										</tr>
+										<tr class="border-b border-[#56577A]">
+											<td class="p-3 text-white first:pl-0">1</td>
+											<td class="p-3 text-white first:pl-0">4F</td>
+											<td class="p-3 text-center text-white first:pl-0">q</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												4.24
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												2159
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												0.77
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												0.24
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												<a
+													href="#"
+													class="flex items-center justify-center text-center"
+												>
+													<img
+														class="flex"
+														src="./images/dashboard/video-icon.png"
+														alt="icon"
+													/>
+												</a>
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												<a
+													href="#"
+													class="rounded-full bg-[#891A93] px-6 py-1 text-center text-[10px] text-white"
+												>
+													Analyze
+												</a>
+											</td>
+										</tr>
+										<tr class="border-b border-[#56577A]">
+											<td class="p-3 text-white first:pl-0">1</td>
+											<td class="p-3 text-white first:pl-0">4F</td>
+											<td class="p-3 text-center text-white first:pl-0">q</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												4.24
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												2159
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												0.77
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												0.24
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												<a
+													href="#"
+													class="flex items-center justify-center text-center"
+												>
+													<img
+														class="flex"
+														src="./images/dashboard/video-icon.png"
+														alt="icon"
+													/>
+												</a>
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												<a
+													href="#"
+													class="rounded-full bg-[#891A93] px-6 py-1 text-center text-[10px] text-white"
+												>
+													Analyze
+												</a>
+											</td>
+										</tr>
+										<tr class="border-b border-[#56577A]">
+											<td class="p-3 text-white first:pl-0">1</td>
+											<td class="p-3 text-white first:pl-0">4F</td>
+											<td class="p-3 text-center text-white first:pl-0">q</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												4.24
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												2159
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												0.77
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												0.24
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												<a
+													href="#"
+													class="flex items-center justify-center text-center"
+												>
+													<img
+														class="flex"
+														src="./images/dashboard/video-icon.png"
+														alt="icon"
+													/>
+												</a>
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												<a
+													href="#"
+													class="rounded-full bg-[#891A93] px-6 py-1 text-center text-[10px] text-white"
+												>
+													Analyze
+												</a>
+											</td>
+										</tr>
+										<tr class="border-b border-[#56577A]">
+											<td class="p-3 text-white first:pl-0">1</td>
+											<td class="p-3 text-white first:pl-0">4F</td>
+											<td class="p-3 text-center text-white first:pl-0">q</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												4.24
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												2159
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												0.77
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												0.24
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												<a
+													href="#"
+													class="flex items-center justify-center text-center"
+												>
+													<img
+														class="flex"
+														src="./images/dashboard/video-icon.png"
+														alt="icon"
+													/>
+												</a>
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												<a
+													href="#"
+													class="rounded-full bg-[#891A93] px-6 py-1 text-center text-[10px] text-white"
+												>
+													Analyze
+												</a>
+											</td>
+										</tr>
+										<tr class="border-b border-[#56577A]">
+											<td class="p-3 text-white first:pl-0">1</td>
+											<td class="p-3 text-white first:pl-0">4F</td>
+											<td class="p-3 text-center text-white first:pl-0">q</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												4.24
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												2159
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												0.77
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												0.24
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												<a
+													href="#"
+													class="flex items-center justify-center text-center"
+												>
+													<img
+														class="flex"
+														src="./images/dashboard/video-icon.png"
+														alt="icon"
+													/>
+												</a>
+											</td>
+											<td class="p-3 text-center text-white first:pl-0">
+												<a
+													href="#"
+													class="rounded-full bg-[#891A93] px-6 py-1 text-center text-[10px] text-white"
+												>
+													Analyze
+												</a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
 					</div>
 				</section>
 			</main>
