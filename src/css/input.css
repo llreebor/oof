@@ -44,6 +44,22 @@
 			rgba(43, 49, 56, 0.32) 25.19%
 		);
 
+	--gradient-figure-skating: linear-gradient(180deg, #68ceff 0%, #00acff 100%);
+	--gradient-figure-skating-bg: 228deg, #68ceff 10.61%, #0670a3 73.6%, #02234f;
+
+	--gradient-gymnastics:
+		linear-gradient(180deg, #d9bcf5 -0.44%, #9b59b6 100%),
+		linear-gradient(180deg, #d9bcf5 -0.44%, #9b59b6 100%),
+		linear-gradient(180deg, #afd1ff 0%, #3b8eff 100%);
+
+	--gradient-gymnastics-bg: 180deg, #d9bcf5 -18.02%, #732d8f 100%, #02234f;
+	--gradient-track:
+		linear-gradient(180deg, #fec8c7 0.78%, #c32726 100%),
+		linear-gradient(180deg, #afd1ff 0%, #3b8eff 100%);
+	--gradient-swim: linear-gradient(180deg, #afd1ff 0%, #3b8eff 100%);
+	--gradient-swim-bg: 218deg, #69afff 10.37%, #164a85 71.91%, #02234f;
+	--gradient-dive: linear-gradient(180deg, #afd1ff 0%, #3b8eff 100%);
+
 	/* Shadow */
 	--shadow-xs: 0px 3.5px 5.5px 0px rgba(0, 0, 0, 0.02);
 	--drop-shadow-cta: drop-shadow(0px 15.036px 28.343px rgba(38, 131, 238, 0.1));
@@ -51,6 +67,7 @@
 		0px 16.019px 30.196px rgba(38, 131, 238, 0.1)
 	);
 	--drop-shadow-sport-image: 0px 16.019px 30.196px 0px rgba(38, 131, 238, 0.15);
+	--shadow-dropdown: 0px 22.662px 135.624px 1px rgba(5, 78, 174, 0.15);
 }
 
 /* Container max-width & paddings */
@@ -70,18 +87,29 @@
 	.btn {
 		@apply flex w-full items-center justify-center gap-3 rounded-full border p-5 text-center text-xl text-white uppercase max-sm:px-4 max-sm:py-3 max-sm:text-lg;
 	}
-	.box {
+	.metric-figure {
 		background:
 			radial-gradient(
 				50% 50% at 50% 50%,
-				rgba(188, 233, 255, 0.35) 0%,
+				rgba(188, 233, 255, 0.2) 0%,
 				rgba(197, 224, 255, 0) 100%
 			),
-			linear-gradient(
-				168deg,
-				rgba(210, 229, 255, 0.16) 0.43%,
-				rgba(43, 49, 56, 0.32) 25.19%
-			);
+			linear-gradient(110deg, #68ceff 19.32%, #00acff 90.5%), #02234f;
+	}
+	.swim-figure {
+		background:
+			radial-gradient(
+				50% 50% at 50% 50%,
+				rgba(188, 233, 255, 0.2) 0%,
+				rgba(197, 224, 255, 0) 100%
+			),
+			linear-gradient(110deg, #69afff 19.32%, #2683ee 90.5%), #02234f;
+	}
+
+	.gymnastics-figure {
+		background:
+			linear-gradient(90deg, #d2b5ed 0.24%, #b56ad4 99.76%),
+			linear-gradient(90deg, #d9bcf5 0.24%, #9b59b6 99.76%);
 	}
 	.stroke-text {
 		-webkit-text-stroke-width: 1px;
@@ -94,6 +122,7 @@
 		@apply left-0;
 	}
 
+	/* Buttons */
 	.btn.btn-gradient {
 		@apply border-none bg-linear-(--gradient-btn) transition-colors;
 	}
@@ -102,5 +131,137 @@
 	}
 	.btn.btn-outline {
 		@apply text-navy border-navy hover:bg-navy rounded-full text-[18px] leading-[1.05] font-semibold tracking-[5.7px] uppercase transition-colors hover:text-white;
+	}
+	.figure-btn {
+		background: var(--gradient-figure-skating);
+		border: transparent;
+		color: white !important;
+	}
+	.swim-btn {
+		background: var(--gradient-swim);
+		border: transparent;
+		color: white !important;
+	}
+	.dive-btn {
+		background: var(--gradient-dive);
+		border: transparent;
+		color: white !important;
+	}
+	.gymnastics-btn {
+		background: var(--gradient-gymnastics);
+		border: transparent;
+		color: white !important;
+	}
+
+	/* Cards HOver Gradients */
+	.figure-card:hover {
+		background:
+			linear-gradient(
+				0deg,
+				rgba(42, 108, 100, 0.2) 0%,
+				rgba(42, 108, 100, 0.2) 100%
+			),
+			linear-gradient(
+				168deg,
+				rgba(210, 229, 255, 0.08) 0.43%,
+				rgba(43, 49, 56, 0.32) 25.19%
+			);
+
+		.card-btn {
+			background: var(--gradient-figure-skating);
+			border-color: transparent !important;
+		}
+		.card-title {
+			background: var(--gradient-figure-skating);
+			background-clip: text;
+		}
+	}
+	.gymnastic-card:hover {
+		background:
+			linear-gradient(
+				0deg,
+				rgba(90, 42, 108, 0.2) 0%,
+				rgba(90, 42, 108, 0.2) 100%
+			),
+			linear-gradient(
+				168deg,
+				rgba(210, 229, 255, 0.16) 0.43%,
+				rgba(43, 49, 56, 0.32) 25.19%
+			);
+
+		.card-btn {
+			background: var(--gradient-gymnastics);
+			border-color: transparent !important;
+		}
+		.card-title {
+			background: var(--gradient-gymnastics);
+			background-clip: text;
+		}
+	}
+	.track-card:hover {
+		background:
+			linear-gradient(
+				0deg,
+				rgba(108, 42, 42, 0.2) 0%,
+				rgba(108, 42, 42, 0.2) 100%
+			),
+			linear-gradient(
+				168deg,
+				rgba(210, 229, 255, 0.16) 0.43%,
+				rgba(43, 49, 56, 0.32) 25.19%
+			);
+
+		.card-btn {
+			background: var(--gradient-track);
+			border-color: transparent !important;
+		}
+		.card-title {
+			background: var(--gradient-track);
+			background-clip: text;
+		}
+	}
+	.swim-card:hover {
+		background:
+			linear-gradient(
+				0deg,
+				rgba(42, 108, 102, 0.2) 0%,
+				rgba(42, 108, 102, 0.2) 100%
+			),
+			linear-gradient(
+				168deg,
+				rgba(210, 229, 255, 0.16) 0.43%,
+				rgba(43, 49, 56, 0.32) 25.19%
+			);
+
+		.card-btn {
+			background: var(--gradient-swim);
+			border-color: transparent !important;
+		}
+		.card-title {
+			background: var(--gradient-swim);
+			background-clip: text;
+		}
+	}
+	.dive-card:hover {
+		background:
+			linear-gradient(
+				0deg,
+				rgba(42, 55, 108, 0.2) 0%,
+				rgba(42, 55, 108, 0.2) 100%
+			),
+			linear-gradient(
+				168deg,
+				rgba(210, 229, 255, 0.16) 0.43%,
+				rgba(43, 49, 56, 0.32) 25.19%
+			);
+
+		.card-btn {
+			background: var(--gradient-dive);
+			border-color: transparent !important;
+		}
+		.card-title {
+			background: var(--gradient-dive);
+			background-clip: text;
+		}
 	}
 }

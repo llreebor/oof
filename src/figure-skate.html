@@ -16,7 +16,7 @@
 	<body class="relative h-full">
 		<div class="wrapper flex min-h-full flex-col">
 			<!-- Header-->
-			<header class="border-b-[0.5px] border-b-[#D9EFF7] px-4 py-[22px]">
+			<header class="border-b-[0.5px] border-b-[#D9EFF7] px-4">
 				<div class="mx-auto flex max-w-[1240px] items-center">
 					<a href="#">
 						<img src="./images/global/logo.svg" alt="logo" />
@@ -28,43 +28,95 @@
 					>
 						<ul class="flex items-center gap-9">
 							<!-- Menu Item With Submenu -->
-							<li class="menu-link group relative">
+							<li class="menu-link group relative py-6">
 								<a href="#" class="flex items-center gap-1">
-									<span class="text-brown-800 text-[15px] uppercase">
+									<span
+										class="text-brown-800 text-[15px] uppercase transition-colors group-hover:text-[#0550B5]"
+									>
 										Sports
 									</span>
-									<img
+
+									<svg
 										class="transition-transform group-hover:rotate-180"
-										src="./images/global/chevron-down.svg"
-										alt="icon"
-									/>
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+									>
+										<path
+											class="transition-colors group-hover:stroke-[#0550B5]"
+											d="M4 6L8 10L12 6"
+											stroke="#281D1B"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
 
 									<!-- Submenu | Dropdown -->
 									<ul
-										class="border-brown-800/10 absolute top-full left-0 hidden min-w-max overflow-hidden rounded-lg border bg-white shadow-sm group-hover:grid"
+										class="shadow-dropdown absolute top-full left-0 hidden min-w-[220px] overflow-hidden rounded-lg bg-white px-3 py-1 group-hover:grid"
 									>
-										<li>
+										<li
+											class="border-b-navy/20 border-b py-[6px] last:border-b-0"
+										>
 											<a
-												class="text-brown-800/80 hover:text-brown-800 flex px-4 py-2 text-sm uppercase transition-colors hover:bg-gray-100"
+												class="text-navy hover:text-brown-800 flex gap-2.5 rounded-md px-1 py-[6px] text-xl tracking-[#-0.837px] transition-colors"
 												href="#"
 											>
-												football
+												<img
+													src="./images/icons/figure-skate-icon.svg"
+													alt="icon"
+												/>
+												Figure Skate
 											</a>
 										</li>
-										<li>
+										<li
+											class="border-b-navy/20 border-b py-[6px] last:border-b-0"
+										>
 											<a
-												class="text-brown-800/80 hover:text-brown-800 flex px-4 py-2 text-sm uppercase transition-colors hover:bg-gray-100"
+												class="text-navy hover:text-brown-800 flex gap-2.5 rounded-md px-1 py-[6px] text-xl tracking-[#-0.837px] transition-colors"
 												href="#"
 											>
-												basketball
+												<img src="./images/icons/dive-icon.svg" alt="icon" />
+												Dive
 											</a>
 										</li>
-										<li>
+										<li
+											class="border-b-navy/20 border-b py-[6px] last:border-b-0"
+										>
 											<a
-												class="text-brown-800/80 hover:text-brown-800 flex px-4 py-2 text-sm uppercase transition-colors hover:bg-gray-100"
+												class="text-navy hover:text-brown-800 flex gap-2.5 rounded-md px-1 py-[6px] text-xl tracking-[#-0.837px] transition-colors"
 												href="#"
 											>
-												tennis
+												<img src="./images/icons/swim-icon.svg" alt="icon" />
+												Swim
+											</a>
+										</li>
+										<li
+											class="border-b-navy/20 border-b py-[6px] last:border-b-0"
+										>
+											<a
+												class="text-navy hover:text-brown-800 flex gap-2.5 rounded-md px-1 py-[6px] text-xl tracking-[#-0.837px] transition-colors"
+												href="#"
+											>
+												<img src="./images/icons/track-icon.svg" alt="icon" />
+												Track & Field
+											</a>
+										</li>
+										<li
+											class="border-b-navy/20 border-b py-[6px] last:border-b-0"
+										>
+											<a
+												class="text-navy hover:text-brown-800 flex gap-2.5 rounded-md px-1 py-[6px] text-xl tracking-[#-0.837px] transition-colors"
+												href="#"
+											>
+												<img
+													src="./images/icons/gymnastic-icon.svg"
+													alt="icon"
+												/>
+												Gymnastics
 											</a>
 										</li>
 									</ul>
@@ -72,43 +124,73 @@
 							</li>
 
 							<!-- Menu Item With Submenu -->
-							<li class="menu-link group relative">
+							<li class="menu-link group relative py-6">
 								<a href="#" class="flex items-center gap-1">
-									<span class="text-brown-800 text-[15px] uppercase">
+									<span
+										class="text-brown-800 text-[15px] uppercase group-hover:text-[#0550B5]"
+									>
 										Company
 									</span>
-									<img
+									<svg
 										class="transition-transform group-hover:rotate-180"
-										src="./images/global/chevron-down.svg"
-										alt="icon"
-									/>
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+									>
+										<path
+											class="transition-colors group-hover:stroke-[#0550B5]"
+											d="M4 6L8 10L12 6"
+											stroke="#281D1B"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
 
 									<!-- Submenu | Dropdown -->
 									<ul
-										class="border-brown-800/10 absolute top-full left-0 hidden min-w-max overflow-hidden rounded-lg border bg-white shadow-sm group-hover:grid"
+										class="shadow-dropdown absolute top-full left-0 hidden min-w-[220px] overflow-hidden rounded-lg bg-white px-3 py-1 group-hover:grid"
 									>
-										<li>
+										<li
+											class="border-b-navy/20 border-b py-[6px] last:border-b-0"
+										>
 											<a
-												class="text-brown-800/80 hover:text-brown-800 flex px-4 py-2 text-sm uppercase transition-colors hover:bg-gray-100"
+												class="text-navy hover:text-brown-800 flex gap-2.5 rounded-md px-1 py-[6px] text-xl tracking-[#-0.837px] transition-colors"
 												href="#"
 											>
-												Nike
+												About Us
 											</a>
 										</li>
-										<li>
+										<li
+											class="border-b-navy/20 border-b py-[6px] last:border-b-0"
+										>
 											<a
-												class="text-brown-800/80 hover:text-brown-800 flex px-4 py-2 text-sm uppercase transition-colors hover:bg-gray-100"
+												class="text-navy hover:text-brown-800 flex gap-2.5 rounded-md px-1 py-[6px] text-xl tracking-[#-0.837px] transition-colors"
 												href="#"
 											>
-												Reebok
+												Careers
 											</a>
 										</li>
-										<li>
+										<li
+											class="border-b-navy/20 border-b py-[6px] last:border-b-0"
+										>
 											<a
-												class="text-brown-800/80 hover:text-brown-800 flex px-4 py-2 text-sm uppercase transition-colors hover:bg-gray-100"
+												class="text-navy hover:text-brown-800 flex gap-2.5 rounded-md px-1 py-[6px] text-xl tracking-[#-0.837px] transition-colors"
 												href="#"
 											>
-												Adidas
+												Press
+											</a>
+										</li>
+										<li
+											class="border-b-navy/20 border-b py-[6px] last:border-b-0"
+										>
+											<a
+												class="text-navy hover:text-brown-800 flex gap-2.5 rounded-md px-1 py-[6px] text-xl tracking-[#-0.837px] transition-colors"
+												href="#"
+											>
+												Blog
 											</a>
 										</li>
 									</ul>
@@ -303,22 +385,9 @@
 						<div class="flex flex-col">
 							<div class="flex items-center justify-center gap-4">
 								<img
-									class="max-[350px]:w-[120px]"
-									src="./images/sport-page/oof-head.svg"
+									src="./images/sport-page/figure-skate-logo-solid.svg"
 									alt="logo"
 								/>
-								<div class="flex items-center gap-2.5">
-									<img
-										class="max-sm:w-10"
-										src="./images/sport-page/skate-page-logo.png"
-										alt="logo"
-									/>
-									<h2
-										class="flex items-center justify-center gap-6 bg-linear-(--gradient-lightblue-skate) bg-clip-text! text-center text-[52px] font-bold text-transparent max-sm:gap-3 max-sm:text-2xl"
-									>
-										Figure Skate
-									</h2>
-								</div>
 							</div>
 
 							<!-- Title & BG -->
@@ -346,8 +415,11 @@
 									data using OOF Figure Skate.
 								</p>
 
-								<a href="#" class="btn btn-outline max-w-fit px-10 py-[14px]">
-									Explore
+								<a
+									href="#"
+									class="btn btn-outline figure-btn max-w-fit px-16 py-5 text-2xl leading-[20px] font-semibold tracking-normal!"
+								>
+									Get Started
 								</a>
 							</div>
 						</div>
@@ -355,32 +427,28 @@
 				</section>
 
 				<!-- Unlock New Performance Metrics -->
-				<section class="bg-navy py-[100px] max-sm:py-10">
+				<section
+					class="bg-linear-(--gradient-figure-skating-bg) py-[100px] max-sm:py-10"
+				>
 					<div class="mx-auto max-w-[1220px] px-4">
 						<!-- Section Header -->
 						<div class="mx-auto w-full max-w-[838px]">
 							<h2
-								class="text-center text-[54px] leading-none tracking-[-1.08px] text-white max-sm:text-2xl"
+								class="text-center text-[46px] leading-none tracking-[-1.08px] text-white max-sm:text-2xl"
 							>
 								Unlock New
 								<strong>Performance Metrics</strong>
 							</h2>
-							<hr class="my-4 h-[0.5px] w-full border-none bg-white/30" />
-							<p
-								class="text-center text-2xl leading-[1.4] font-light text-white max-sm:text-lg"
-							>
-								Gain unprecedented access to your figure skating performance
-								data using OOF Figure Skate.
-							</p>
 						</div>
 
 						<div
-							class="mx-auto mt-10 flex max-w-[602px] flex-wrap items-center justify-center gap-4"
+							class="mx-auto mt-10 flex max-w-[698px] flex-wrap items-center justify-center gap-[14px]"
 						>
 							<div
-								class="box flex w-full max-w-[190px] shrink-0 flex-col items-center gap-2 rounded-[20px] border-[0.5px] border-[#9EC8FF] px-5 py-[14px]"
+								class="metric-figure flex w-full max-w-[211px] shrink-0 flex-col items-center gap-2 rounded-[20px] border-[0.43px] border-[#9ec8ff] px-4 py-3"
 							>
 								<img
+									class="w-[94px]"
 									src="./images/icons/mdi_axis-z-rotate-clockwise.svg"
 									alt="icon"
 								/>
@@ -389,33 +457,46 @@
 								</p>
 							</div>
 							<div
-								class="box flex w-full max-w-[190px] shrink-0 flex-col items-center gap-2 rounded-[20px] border-[0.5px] border-[#9EC8FF] px-5 py-[14px]"
+								class="metric-figure flex w-full max-w-[211px] shrink-0 flex-col items-center gap-2 rounded-[20px] border-[0.43px] border-[#9ec8ff] px-4 py-3"
 							>
-								<img src="./images/icons/mdi_jump.svg" alt="icon" />
+								<img
+									class="w-[94px]"
+									src="./images/icons/mdi_jump.svg"
+									alt="icon"
+								/>
 								<p class="text-xl font-semibold tracking-[-0.4px] text-white">
 									Air time
 								</p>
 							</div>
 							<div
-								class="box flex w-full max-w-[190px] shrink-0 flex-col items-center gap-2 rounded-[20px] border-[0.5px] border-[#9EC8FF] px-5 py-[14px]"
+								class="metric-figure flex w-full max-w-[211px] shrink-0 flex-col items-center gap-2 rounded-[20px] border-[0.43px] border-[#9EC8FF] px-4 py-3"
 							>
-								<img src="./images/icons/mdi_content-copy.svg" alt="icon" />
+								<img
+									class="w-[94px]"
+									src="./images/icons/mdi_content-copy.svg"
+									alt="icon"
+								/>
 								<p class="text-xl font-semibold tracking-[-0.4px] text-white">
 									Synchronicity
 								</p>
 							</div>
 							<div
-								class="box flex w-full max-w-[190px] shrink-0 flex-col items-center gap-2 rounded-[20px] border-[0.5px] border-[#9EC8FF] px-[5px] py-[14px]"
+								class="metric-figure flex w-full max-w-[211px] shrink-0 flex-col items-center gap-2 rounded-[20px] border-[0.43px] border-[#9EC8FF] px-[5px] py-3"
 							>
-								<img src="./images/icons/mdi_3d-rotation.svg" alt="icon" />
+								<img
+									class="w-[94px]"
+									src="./images/icons/mdi_3d-rotation.svg"
+									alt="icon"
+								/>
 								<p class="text-xl font-semibold tracking-[-0.4px] text-white">
 									Rotations complete
 								</p>
 							</div>
 							<div
-								class="box flex w-full max-w-[190px] shrink-0 flex-col items-center gap-2 rounded-[20px] border-[0.5px] border-[#9EC8FF] px-5 py-[14px]"
+								class="metric-figure flex w-full max-w-[211px] shrink-0 flex-col items-center gap-2 rounded-[20px] border-[0.43px] border-[#9EC8FF] px-4 py-3"
 							>
 								<img
+									class="w-[94px]"
 									src="./images/icons/mdi_chart-line-variant.svg"
 									alt="icon"
 								/>
@@ -424,9 +505,13 @@
 								</p>
 							</div>
 							<div
-								class="box flex w-full max-w-[190px] shrink-0 flex-col items-center gap-2 rounded-[20px] border-[0.5px] border-[#9EC8FF] px-5 py-[14px]"
+								class="metric-figure flex w-full max-w-[211px] shrink-0 flex-col items-center gap-2 rounded-[20px] border-[0.43px] border-[#9EC8FF] px-5 py-[14px]"
 							>
-								<img src="./images/icons/mdi_map.svg" alt="icon" />
+								<img
+									class="w-[94px]"
+									src="./images/icons/mdi_map.svg"
+									alt="icon"
+								/>
 								<p class="text-xl font-semibold tracking-[-0.4px] text-white">
 									Heatmap
 								</p>
@@ -436,30 +521,26 @@
 				</section>
 
 				<!-- Visualize How You Compare -->
-				<section class="py-[100px] max-sm:py-14">
+				<section class="overflow-hidden py-[100px] max-sm:py-14">
 					<div class="mx-auto max-w-[1246px] px-4">
-						<div
-							class="grid grid-cols-2 items-center gap-20 max-md:grid-cols-1 max-sm:gap-10"
-						>
-							<div class="space-y-4">
+						<div class="flex items-center max-md:flex-col max-md:gap-10">
+							<div class="max-w-[514px] space-y-4 max-md:max-w-full">
 								<h2
 									class="text-navy text-[54px] leading-[1.1] tracking-[-1.08px] max-sm:text-3xl"
 								>
 									<strong class="block">Visualize How</strong>
 									You Compare
 								</h2>
-								<hr class="bg-navy/30 h-[0.5px] w-full border-none" />
+								<hr class="h-[0.5px] w-full border-none bg-[#D9EFF7]" />
 								<p class="text-2xl text-[#1B2428] max-sm:text-xl">
 									Cross-examine your data with World Champions, Olympians...and
 									yourself
 								</p>
 							</div>
-							<div
-								class="overflow-hidden rounded-[22px] border-2 border-[#D9EFF7] drop-shadow-(--drop-shadow-sport-image)"
-							>
+							<div>
 								<img
-									class="h-auto w-full max-w-full"
-									src="./images/sport-page/swim-image-1.png"
+									class="h-auto w-full max-w-full translate-x-7 scale-115 max-md:scale-100 max-sm:translate-x-0"
+									src="./images/sport-page/compare-image.png"
 									alt="image"
 								/>
 							</div>
@@ -468,23 +549,19 @@
 				</section>
 
 				<!-- Your Personal Performance Analyst -->
-				<section class="py-[100px] max-sm:py-14">
+				<section class="overflow-hidden py-[100px] max-sm:py-14">
 					<div class="mx-auto max-w-[1246px] px-4">
-						<div
-							class="grid grid-cols-2 items-center gap-20 max-md:grid-cols-1 max-sm:gap-10"
-						>
-							<div
-								class="overflow-hidden rounded-[22px] border-2 border-[#D9EFF7] drop-shadow-(--drop-shadow-sport-image) max-md:order-2"
-							>
+						<div class="flex items-center max-md:flex-col max-md:gap-10">
+							<div class="max-md:order-2">
 								<img
-									class="h-auto w-full max-w-full"
-									src="./images/sport-page/skate-image-2.png"
+									class="h-auto w-full max-w-full -translate-x-7 scale-115 max-md:translate-x-0 max-md:scale-100"
+									src="./images/sport-page/analyst-skating.png"
 									alt="image"
 								/>
 							</div>
-							<div class="space-y-4">
+							<div class="w-full max-w-[554px] space-y-4 max-md:max-w-full">
 								<h2
-									class="text-navy text-[54px] leading-[1.1] tracking-[-1.08px] max-sm:text-3xl"
+									class="text-navy pl-2 text-[54px] leading-[1.1] tracking-[-1.08px] max-sm:text-3xl"
 								>
 									Your Personal
 									<strong class="block">Performance Analyst</strong>
@@ -583,7 +660,7 @@
 										<svg
 											width="24"
 											height="25"
-											viewBox="0 0 24 25"
+											viewmetric-figure="0 0 24 25"
 											fill="none"
 											xmlns="http://www.w3.org/2000/svg"
 										>
@@ -600,7 +677,7 @@
 										<svg
 											width="24"
 											height="25"
-											viewBox="0 0 24 25"
+											viewmetric-figure="0 0 24 25"
 											fill="none"
 											xmlns="http://www.w3.org/2000/svg"
 										>

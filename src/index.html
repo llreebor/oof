@@ -16,7 +16,7 @@
 	<body class="relative h-full">
 		<div class="wrapper flex min-h-full flex-col">
 			<!-- Header-->
-			<header class="border-b-[0.5px] border-b-[#D9EFF7] px-4 py-[22px]">
+			<header class="border-b-[0.5px] border-b-[#D9EFF7] px-4">
 				<div class="mx-auto flex max-w-[1240px] items-center">
 					<a href="#">
 						<img src="./images/global/logo.svg" alt="logo" />
@@ -28,43 +28,95 @@
 					>
 						<ul class="flex items-center gap-9">
 							<!-- Menu Item With Submenu -->
-							<li class="menu-link group relative">
+							<li class="menu-link group relative py-6">
 								<a href="#" class="flex items-center gap-1">
-									<span class="text-brown-800 text-[15px] uppercase">
+									<span
+										class="text-brown-800 text-[15px] uppercase transition-colors group-hover:text-[#0550B5]"
+									>
 										Sports
 									</span>
-									<img
+
+									<svg
 										class="transition-transform group-hover:rotate-180"
-										src="./images/global/chevron-down.svg"
-										alt="icon"
-									/>
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+									>
+										<path
+											class="transition-colors group-hover:stroke-[#0550B5]"
+											d="M4 6L8 10L12 6"
+											stroke="#281D1B"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
 
 									<!-- Submenu | Dropdown -->
 									<ul
-										class="border-brown-800/10 absolute top-full left-0 hidden min-w-max overflow-hidden rounded-lg border bg-white shadow-sm group-hover:grid"
+										class="shadow-dropdown absolute top-full left-0 hidden min-w-[220px] overflow-hidden rounded-lg bg-white px-3 py-1 group-hover:grid"
 									>
-										<li>
+										<li
+											class="border-b-navy/20 border-b py-[6px] last:border-b-0"
+										>
 											<a
-												class="text-brown-800/80 hover:text-brown-800 flex px-4 py-2 text-sm uppercase transition-colors hover:bg-gray-100"
+												class="text-navy hover:text-brown-800 flex gap-2.5 rounded-md px-1 py-[6px] text-xl tracking-[#-0.837px] transition-colors"
 												href="#"
 											>
-												football
+												<img
+													src="./images/icons/figure-skate-icon.svg"
+													alt="icon"
+												/>
+												Figure Skate
 											</a>
 										</li>
-										<li>
+										<li
+											class="border-b-navy/20 border-b py-[6px] last:border-b-0"
+										>
 											<a
-												class="text-brown-800/80 hover:text-brown-800 flex px-4 py-2 text-sm uppercase transition-colors hover:bg-gray-100"
+												class="text-navy hover:text-brown-800 flex gap-2.5 rounded-md px-1 py-[6px] text-xl tracking-[#-0.837px] transition-colors"
 												href="#"
 											>
-												basketball
+												<img src="./images/icons/dive-icon.svg" alt="icon" />
+												Dive
 											</a>
 										</li>
-										<li>
+										<li
+											class="border-b-navy/20 border-b py-[6px] last:border-b-0"
+										>
 											<a
-												class="text-brown-800/80 hover:text-brown-800 flex px-4 py-2 text-sm uppercase transition-colors hover:bg-gray-100"
+												class="text-navy hover:text-brown-800 flex gap-2.5 rounded-md px-1 py-[6px] text-xl tracking-[#-0.837px] transition-colors"
 												href="#"
 											>
-												tennis
+												<img src="./images/icons/swim-icon.svg" alt="icon" />
+												Swim
+											</a>
+										</li>
+										<li
+											class="border-b-navy/20 border-b py-[6px] last:border-b-0"
+										>
+											<a
+												class="text-navy hover:text-brown-800 flex gap-2.5 rounded-md px-1 py-[6px] text-xl tracking-[#-0.837px] transition-colors"
+												href="#"
+											>
+												<img src="./images/icons/track-icon.svg" alt="icon" />
+												Track & Field
+											</a>
+										</li>
+										<li
+											class="border-b-navy/20 border-b py-[6px] last:border-b-0"
+										>
+											<a
+												class="text-navy hover:text-brown-800 flex gap-2.5 rounded-md px-1 py-[6px] text-xl tracking-[#-0.837px] transition-colors"
+												href="#"
+											>
+												<img
+													src="./images/icons/gymnastic-icon.svg"
+													alt="icon"
+												/>
+												Gymnastics
 											</a>
 										</li>
 									</ul>
@@ -72,43 +124,73 @@
 							</li>
 
 							<!-- Menu Item With Submenu -->
-							<li class="menu-link group relative">
+							<li class="menu-link group relative py-6">
 								<a href="#" class="flex items-center gap-1">
-									<span class="text-brown-800 text-[15px] uppercase">
+									<span
+										class="text-brown-800 text-[15px] uppercase group-hover:text-[#0550B5]"
+									>
 										Company
 									</span>
-									<img
+									<svg
 										class="transition-transform group-hover:rotate-180"
-										src="./images/global/chevron-down.svg"
-										alt="icon"
-									/>
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+									>
+										<path
+											class="transition-colors group-hover:stroke-[#0550B5]"
+											d="M4 6L8 10L12 6"
+											stroke="#281D1B"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
 
 									<!-- Submenu | Dropdown -->
 									<ul
-										class="border-brown-800/10 absolute top-full left-0 hidden min-w-max overflow-hidden rounded-lg border bg-white shadow-sm group-hover:grid"
+										class="shadow-dropdown absolute top-full left-0 hidden min-w-[220px] overflow-hidden rounded-lg bg-white px-3 py-1 group-hover:grid"
 									>
-										<li>
+										<li
+											class="border-b-navy/20 border-b py-[6px] last:border-b-0"
+										>
 											<a
-												class="text-brown-800/80 hover:text-brown-800 flex px-4 py-2 text-sm uppercase transition-colors hover:bg-gray-100"
+												class="text-navy hover:text-brown-800 flex gap-2.5 rounded-md px-1 py-[6px] text-xl tracking-[#-0.837px] transition-colors"
 												href="#"
 											>
-												Nike
+												About Us
 											</a>
 										</li>
-										<li>
+										<li
+											class="border-b-navy/20 border-b py-[6px] last:border-b-0"
+										>
 											<a
-												class="text-brown-800/80 hover:text-brown-800 flex px-4 py-2 text-sm uppercase transition-colors hover:bg-gray-100"
+												class="text-navy hover:text-brown-800 flex gap-2.5 rounded-md px-1 py-[6px] text-xl tracking-[#-0.837px] transition-colors"
 												href="#"
 											>
-												Reebok
+												Careers
 											</a>
 										</li>
-										<li>
+										<li
+											class="border-b-navy/20 border-b py-[6px] last:border-b-0"
+										>
 											<a
-												class="text-brown-800/80 hover:text-brown-800 flex px-4 py-2 text-sm uppercase transition-colors hover:bg-gray-100"
+												class="text-navy hover:text-brown-800 flex gap-2.5 rounded-md px-1 py-[6px] text-xl tracking-[#-0.837px] transition-colors"
 												href="#"
 											>
-												Adidas
+												Press
+											</a>
+										</li>
+										<li
+											class="border-b-navy/20 border-b py-[6px] last:border-b-0"
+										>
+											<a
+												class="text-navy hover:text-brown-800 flex gap-2.5 rounded-md px-1 py-[6px] text-xl tracking-[#-0.837px] transition-colors"
+												href="#"
+											>
+												Blog
 											</a>
 										</li>
 									</ul>
@@ -356,143 +438,9 @@
 
 						<!-- Content -->
 						<div class="mt-9 flex flex-wrap items-center justify-center gap-4">
-							<!-- Card -->
+							<!-- Figure Skate -->
 							<div
-								class="group w-full max-w-[380px] space-y-4 rounded-xl border-[0.5px] border-[#9EC8FF] bg-linear-(--gradient-card) px-10 py-[28px] max-sm:p-8"
-							>
-								<!-- Image -->
-								<div class="flex items-center justify-center">
-									<img src="./images/home/card-image-1.png" alt="card image" />
-								</div>
-								<!-- Title -->
-								<div class="flex items-center justify-center gap-2">
-									<img
-										class="max-sm:w-10"
-										src="./images/home/card-title-icon-1.svg"
-										alt="icon"
-									/>
-									<h2
-										class="text-[38px] font-bold tracking-[-1.509px] text-white max-sm:text-2xl"
-									>
-										Gymnastics
-									</h2>
-								</div>
-
-								<!-- List -->
-								<div class="space-y-[6px]">
-									<ul class="space-y-[6px]">
-										<li
-											class="flex items-center gap-4 rounded-xl bg-white/20 px-3 py-2"
-										>
-											<img src="./images/icons/rotate.svg" alt="icon" />
-											<p
-												class="text-[19px] font-semibold text-white max-sm:text-base"
-											>
-												3D rotation speed
-											</p>
-										</li>
-										<li
-											class="flex items-center gap-4 rounded-xl bg-white/20 px-3 py-2"
-										>
-											<img src="./images/icons/time.svg" alt="icon" />
-											<p
-												class="text-[19px] font-semibold text-white max-sm:text-base"
-											>
-												Apparatus time
-											</p>
-										</li>
-										<li
-											class="flex items-center gap-4 rounded-xl bg-white/20 px-3 py-2"
-										>
-											<img src="./images/icons/hand.svg" alt="icon" />
-											<p
-												class="text-[19px] font-semibold text-white max-sm:text-base"
-											>
-												Hand & foot impacts
-											</p>
-										</li>
-									</ul>
-
-									<button
-										class="tracking-[ -0.397px] w-full cursor-pointer rounded-xl px-4 py-2 text-center font-semibold text-white hover:bg-white/10"
-									>
-										+ More
-									</button>
-								</div>
-
-								<!-- Explore Button -->
-								<a href="#" class="btn btn-white">Explore</a>
-							</div>
-							<!-- Card -->
-							<div
-								class="group w-full max-w-[380px] space-y-4 rounded-xl border-[0.5px] border-[#9EC8FF] bg-linear-(--gradient-card) px-10 py-[28px] max-sm:p-8"
-							>
-								<!-- Image -->
-								<div class="flex items-center justify-center">
-									<img src="./images/home/card-image-2.png" alt="card image" />
-								</div>
-								<!-- Title -->
-								<div class="flex items-center justify-center gap-2">
-									<img
-										class="max-sm:w-10"
-										src="./images/home/card-title-icon-2.svg"
-										alt="icon"
-									/>
-									<h2
-										class="text-[38px] font-bold tracking-[-1.509px] text-white max-sm:text-2xl"
-									>
-										Track & Field
-									</h2>
-								</div>
-
-								<!-- List -->
-								<div class="space-y-[6px]">
-									<ul class="space-y-[6px]">
-										<li
-											class="flex items-center gap-4 rounded-xl bg-white/20 px-3 py-2"
-										>
-											<img src="./images/icons/shoe.svg" alt="icon" />
-											<p
-												class="text-[19px] font-semibold text-white max-sm:text-base"
-											>
-												Contact
-											</p>
-										</li>
-										<li
-											class="flex items-center gap-4 rounded-xl bg-white/20 px-3 py-2"
-										>
-											<img src="./images/icons/tempo.svg" alt="icon" />
-											<p
-												class="text-[19px] font-semibold text-white max-sm:text-base"
-											>
-												Tempo
-											</p>
-										</li>
-										<li
-											class="flex items-center gap-4 rounded-xl bg-white/20 px-3 py-2"
-										>
-											<img src="./images/icons/jump.svg" alt="icon" />
-											<p
-												class="text-[19px] font-semibold text-white max-sm:text-base"
-											>
-												Hip & shoulder lag
-											</p>
-										</li>
-									</ul>
-
-									<button
-										class="tracking-[ -0.397px] w-full cursor-pointer rounded-xl px-4 py-2 text-center font-semibold text-white hover:bg-white/10"
-									>
-										+ More
-									</button>
-								</div>
-
-								<!-- Explore Button -->
-								<a href="#" class="btn btn-white">Explore</a>
-							</div>
-							<!-- Card -->
-							<div
-								class="group w-full max-w-[380px] space-y-4 rounded-xl border-[0.5px] border-[#9EC8FF] bg-linear-(--gradient-card) px-10 py-[28px] max-sm:p-8"
+								class="group sport-card figure-card w-full max-w-[380px] space-y-4 rounded-xl border-[0.5px] border-[#9EC8FF] bg-linear-(--gradient-card) px-10 py-[28px] max-sm:p-8"
 							>
 								<!-- Image -->
 								<div class="flex items-center justify-center">
@@ -500,13 +448,22 @@
 								</div>
 								<!-- Title -->
 								<div class="flex items-center justify-center gap-2">
-									<img
-										class="max-sm:w-10"
-										src="./images/home/card-title-icon-3.svg"
-										alt="icon"
-									/>
+									<!-- Logos -->
+									<div>
+										<img
+											class="group-hover:hidden max-sm:w-10"
+											src="./images/icons/figure-skate-logo-white.svg"
+											alt="icon"
+										/>
+										<img
+											class="hidden group-hover:block max-sm:w-10"
+											src="./images/icons/figure-skate-logo-gradient.svg"
+											alt="icon"
+										/>
+									</div>
+
 									<h2
-										class="text-[38px] font-bold tracking-[-1.509px] text-white max-sm:text-2xl"
+										class="card-title text-[38px] font-bold tracking-[-1.509px] text-white group-hover:bg-clip-text group-hover:text-transparent max-sm:text-2xl"
 									>
 										Figure Skate
 									</h2>
@@ -548,18 +505,187 @@
 									</ul>
 
 									<button
-										class="tracking-[ -0.397px] w-full cursor-pointer rounded-xl px-4 py-2 text-center font-semibold text-white hover:bg-white/10"
+										class="w-full cursor-pointer rounded-xl px-4 py-2 text-center font-semibold tracking-[-0.397px] text-white"
 									>
 										+ More
 									</button>
 								</div>
 
 								<!-- Explore Button -->
-								<a href="#" class="btn btn-white">Explore</a>
+								<a
+									href="#"
+									class="btn btn-white card-btn group-hover:text-navy! hover:text-navy font-bold group-hover:border-transparent"
+								>
+									Explore
+								</a>
 							</div>
-							<!-- Card -->
+
+							<!-- Gymnastics -->
 							<div
-								class="group w-full max-w-[380px] space-y-4 rounded-xl border-[0.5px] border-[#9EC8FF] bg-linear-(--gradient-card) px-10 py-[28px] max-sm:p-8"
+								class="group sport-card gymnastic-card w-full max-w-[380px] space-y-4 rounded-xl border-[0.5px] border-[#9EC8FF] bg-linear-(--gradient-card) px-10 py-[28px] max-sm:p-8"
+							>
+								<!-- Image -->
+								<div class="flex items-center justify-center">
+									<img src="./images/home/card-image-1.png" alt="card image" />
+								</div>
+								<!-- Title -->
+								<div class="flex items-center justify-center gap-2">
+									<!-- Logos -->
+									<div>
+										<img
+											class="group-hover:hidden max-sm:w-10"
+											src="./images/icons/gymnastic-logo-white.svg"
+											alt="icon"
+										/>
+										<img
+											class="hidden group-hover:block max-sm:w-10"
+											src="./images/icons/gymnastic-logo-gradient.svg"
+											alt="icon"
+										/>
+									</div>
+
+									<h2
+										class="card-title text-[38px] font-bold tracking-[-1.509px] text-white group-hover:bg-clip-text group-hover:text-transparent max-sm:text-2xl"
+									>
+										Gymnastics
+									</h2>
+								</div>
+
+								<!-- List -->
+								<div class="space-y-[6px]">
+									<ul class="space-y-[6px]">
+										<li
+											class="flex items-center gap-4 rounded-xl bg-white/20 px-3 py-2"
+										>
+											<img src="./images/icons/rotate.svg" alt="icon" />
+											<p
+												class="text-[19px] font-semibold text-white max-sm:text-base"
+											>
+												3D rotation speed
+											</p>
+										</li>
+										<li
+											class="flex items-center gap-4 rounded-xl bg-white/20 px-3 py-2"
+										>
+											<img src="./images/icons/time.svg" alt="icon" />
+											<p
+												class="text-[19px] font-semibold text-white max-sm:text-base"
+											>
+												Apparatus time
+											</p>
+										</li>
+										<li
+											class="flex items-center gap-4 rounded-xl bg-white/20 px-3 py-2"
+										>
+											<img src="./images/icons/hand.svg" alt="icon" />
+											<p
+												class="text-[19px] font-semibold text-white max-sm:text-base"
+											>
+												Hand & foot impacts
+											</p>
+										</li>
+									</ul>
+
+									<button
+										class="w-full cursor-pointer rounded-xl px-4 py-2 text-center font-semibold tracking-[-0.397px] text-white"
+									>
+										+ More
+									</button>
+								</div>
+
+								<!-- Explore Button -->
+								<a
+									href="#"
+									class="btn btn-white card-btn group-hover:text-navy! hover:text-navy font-bold group-hover:border-transparent"
+								>
+									Explore
+								</a>
+							</div>
+
+							<!-- Track & Field -->
+							<div
+								class="group sport-card track-card w-full max-w-[380px] space-y-4 rounded-xl border-[0.5px] border-[#9EC8FF] bg-linear-(--gradient-card) px-10 py-[28px] max-sm:p-8"
+							>
+								<!-- Image -->
+								<div class="flex items-center justify-center">
+									<img src="./images/home/card-image-2.png" alt="card image" />
+								</div>
+								<!-- Title -->
+								<div class="flex items-center justify-center gap-2">
+									<!-- Logos -->
+									<div>
+										<img
+											class="group-hover:hidden max-sm:w-10"
+											src="./images/icons/track-logo-white.svg"
+											alt="icon"
+										/>
+										<img
+											class="hidden group-hover:block max-sm:w-10"
+											src="./images/icons/track-logo-gradient.svg"
+											alt="icon"
+										/>
+									</div>
+
+									<h2
+										class="card-title text-[38px] font-bold tracking-[-1.509px] text-white group-hover:bg-clip-text group-hover:text-transparent max-sm:text-2xl"
+									>
+										Track & Field
+									</h2>
+								</div>
+
+								<!-- List -->
+								<div class="space-y-[6px]">
+									<ul class="space-y-[6px]">
+										<li
+											class="flex items-center gap-4 rounded-xl bg-white/20 px-3 py-2"
+										>
+											<img src="./images/icons/shoe.svg" alt="icon" />
+											<p
+												class="text-[19px] font-semibold text-white max-sm:text-base"
+											>
+												Contact
+											</p>
+										</li>
+										<li
+											class="flex items-center gap-4 rounded-xl bg-white/20 px-3 py-2"
+										>
+											<img src="./images/icons/tempo.svg" alt="icon" />
+											<p
+												class="text-[19px] font-semibold text-white max-sm:text-base"
+											>
+												Tempo
+											</p>
+										</li>
+										<li
+											class="flex items-center gap-4 rounded-xl bg-white/20 px-3 py-2"
+										>
+											<img src="./images/icons/jump.svg" alt="icon" />
+											<p
+												class="text-[19px] font-semibold text-white max-sm:text-base"
+											>
+												Hip & shoulder lag
+											</p>
+										</li>
+									</ul>
+
+									<button
+										class="w-full cursor-pointer rounded-xl px-4 py-2 text-center font-semibold tracking-[-0.397px] text-white"
+									>
+										+ More
+									</button>
+								</div>
+
+								<!-- Explore Button -->
+								<a
+									href="#"
+									class="btn btn-white card-btn group-hover:text-navy! hover:text-navy font-bold group-hover:border-transparent"
+								>
+									Explore
+								</a>
+							</div>
+							<!-- Swim -->
+							<div
+								class="group sport-card swim-card w-full max-w-[380px] space-y-4 rounded-xl border-[0.5px] border-[#9EC8FF] bg-linear-(--gradient-card) px-10 py-[28px] max-sm:p-8"
 							>
 								<!-- Image -->
 								<div class="flex items-center justify-center">
@@ -567,13 +693,22 @@
 								</div>
 								<!-- Title -->
 								<div class="flex items-center justify-center gap-2">
-									<img
-										class="max-sm:w-10"
-										src="./images/home/card-title-icon-4.svg"
-										alt="icon"
-									/>
+									<!-- Logos -->
+									<div>
+										<img
+											class="group-hover:hidden max-sm:w-10"
+											src="./images/icons/swim-logo-white.svg"
+											alt="icon"
+										/>
+										<img
+											class="hidden group-hover:block max-sm:w-10"
+											src="./images/icons/swim-logo-gradient.svg"
+											alt="icon"
+										/>
+									</div>
+
 									<h2
-										class="text-[38px] font-bold tracking-[-1.509px] text-white max-sm:text-2xl"
+										class="card-title text-[38px] font-bold tracking-[-1.509px] text-white group-hover:bg-clip-text group-hover:text-transparent max-sm:text-2xl"
 									>
 										Swim
 									</h2>
@@ -589,7 +724,7 @@
 											<p
 												class="text-[19px] font-semibold text-white max-sm:text-base"
 											>
-												3D acceleration
+												Conta3D accelerationct
 											</p>
 										</li>
 										<li
@@ -618,18 +753,23 @@
 									</ul>
 
 									<button
-										class="tracking-[ -0.397px] w-full cursor-pointer rounded-xl px-4 py-2 text-center font-semibold text-white hover:bg-white/10"
+										class="w-full cursor-pointer rounded-xl px-4 py-2 text-center font-semibold tracking-[-0.397px] text-white"
 									>
 										+ More
 									</button>
 								</div>
 
 								<!-- Explore Button -->
-								<a href="#" class="btn btn-white">Explore</a>
+								<a
+									href="#"
+									class="btn btn-white card-btn group-hover:text-navy! hover:text-navy font-bold group-hover:border-transparent"
+								>
+									Explore
+								</a>
 							</div>
-							<!-- Card -->
+							<!-- Dive -->
 							<div
-								class="group w-full max-w-[380px] space-y-4 rounded-xl border-[0.5px] border-[#9EC8FF] bg-linear-(--gradient-card) px-10 py-[28px] max-sm:p-8"
+								class="group sport-card dive-card w-full max-w-[380px] space-y-4 rounded-xl border-[0.5px] border-[#9EC8FF] bg-linear-(--gradient-card) px-10 py-[28px] max-sm:p-8"
 							>
 								<!-- Image -->
 								<div class="flex items-center justify-center">
@@ -637,13 +777,22 @@
 								</div>
 								<!-- Title -->
 								<div class="flex items-center justify-center gap-2">
-									<img
-										class="max-sm:w-10"
-										src="./images/home/card-title-5.png"
-										alt="icon"
-									/>
+									<!-- Logos -->
+									<div>
+										<img
+											class="group-hover:hidden max-sm:w-10"
+											src="./images/icons/dive-logo-white.svg"
+											alt="icon"
+										/>
+										<img
+											class="hidden group-hover:block max-sm:w-10"
+											src="./images/icons/dive-logo-gradient.svg"
+											alt="icon"
+										/>
+									</div>
+
 									<h2
-										class="text-[38px] font-bold tracking-[-1.509px] text-white max-sm:text-2xl"
+										class="card-title text-[38px] font-bold tracking-[-1.509px] text-white group-hover:bg-clip-text group-hover:text-transparent max-sm:text-2xl"
 									>
 										Dive
 									</h2>
@@ -688,14 +837,19 @@
 									</ul>
 
 									<button
-										class="tracking-[ -0.397px] w-full cursor-pointer rounded-xl px-4 py-2 text-center font-semibold text-white hover:bg-white/10"
+										class="w-full cursor-pointer rounded-xl px-4 py-2 text-center font-semibold tracking-[-0.397px] text-white"
 									>
 										+ More
 									</button>
 								</div>
 
 								<!-- Explore Button -->
-								<a href="#" class="btn btn-white">Explore</a>
+								<a
+									href="#"
+									class="btn btn-white card-btn group-hover:text-navy! hover:text-navy font-bold group-hover:border-transparent"
+								>
+									Explore
+								</a>
 							</div>
 						</div>
 					</div>
