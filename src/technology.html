@@ -16,7 +16,7 @@
 	<body class="relative h-full">
 		<div class="wrapper flex min-h-full flex-col">
 			<!-- Header-->
-			<header class="border-b-[0.5px] border-b-[#D9EFF7] px-4 py-[22px]">
+			<header class="border-b-[0.5px] border-b-[#D9EFF7] px-4">
 				<div class="mx-auto flex max-w-[1240px] items-center">
 					<a href="#">
 						<img src="./images/global/logo.svg" alt="logo" />
@@ -28,43 +28,95 @@
 					>
 						<ul class="flex items-center gap-9">
 							<!-- Menu Item With Submenu -->
-							<li class="menu-link group relative">
+							<li class="menu-link group relative py-6">
 								<a href="#" class="flex items-center gap-1">
-									<span class="text-brown-800 text-[15px] uppercase">
+									<span
+										class="text-brown-800 text-[15px] uppercase transition-colors group-hover:text-[#0550B5]"
+									>
 										Sports
 									</span>
-									<img
+
+									<svg
 										class="transition-transform group-hover:rotate-180"
-										src="./images/global/chevron-down.svg"
-										alt="icon"
-									/>
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+									>
+										<path
+											class="transition-colors group-hover:stroke-[#0550B5]"
+											d="M4 6L8 10L12 6"
+											stroke="#281D1B"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
 
 									<!-- Submenu | Dropdown -->
 									<ul
-										class="border-brown-800/10 absolute top-full left-0 hidden min-w-max overflow-hidden rounded-lg border bg-white shadow-sm group-hover:grid"
+										class="shadow-dropdown absolute top-full left-0 hidden min-w-[220px] overflow-hidden rounded-lg bg-white px-3 py-1 group-hover:grid"
 									>
-										<li>
+										<li
+											class="border-b-navy/20 border-b py-[6px] last:border-b-0"
+										>
 											<a
-												class="text-brown-800/80 hover:text-brown-800 flex px-4 py-2 text-sm uppercase transition-colors hover:bg-gray-100"
+												class="text-navy hover:text-brown-800 flex gap-2.5 rounded-md px-1 py-[6px] text-xl tracking-[#-0.837px] transition-colors"
 												href="#"
 											>
-												football
+												<img
+													src="./images/icons/figure-skate-icon.svg"
+													alt="icon"
+												/>
+												Figure Skate
 											</a>
 										</li>
-										<li>
+										<li
+											class="border-b-navy/20 border-b py-[6px] last:border-b-0"
+										>
 											<a
-												class="text-brown-800/80 hover:text-brown-800 flex px-4 py-2 text-sm uppercase transition-colors hover:bg-gray-100"
+												class="text-navy hover:text-brown-800 flex gap-2.5 rounded-md px-1 py-[6px] text-xl tracking-[#-0.837px] transition-colors"
 												href="#"
 											>
-												basketball
+												<img src="./images/icons/dive-icon.svg" alt="icon" />
+												Dive
 											</a>
 										</li>
-										<li>
+										<li
+											class="border-b-navy/20 border-b py-[6px] last:border-b-0"
+										>
 											<a
-												class="text-brown-800/80 hover:text-brown-800 flex px-4 py-2 text-sm uppercase transition-colors hover:bg-gray-100"
+												class="text-navy hover:text-brown-800 flex gap-2.5 rounded-md px-1 py-[6px] text-xl tracking-[#-0.837px] transition-colors"
 												href="#"
 											>
-												tennis
+												<img src="./images/icons/swim-icon.svg" alt="icon" />
+												Swim
+											</a>
+										</li>
+										<li
+											class="border-b-navy/20 border-b py-[6px] last:border-b-0"
+										>
+											<a
+												class="text-navy hover:text-brown-800 flex gap-2.5 rounded-md px-1 py-[6px] text-xl tracking-[#-0.837px] transition-colors"
+												href="#"
+											>
+												<img src="./images/icons/track-icon.svg" alt="icon" />
+												Track & Field
+											</a>
+										</li>
+										<li
+											class="border-b-navy/20 border-b py-[6px] last:border-b-0"
+										>
+											<a
+												class="text-navy hover:text-brown-800 flex gap-2.5 rounded-md px-1 py-[6px] text-xl tracking-[#-0.837px] transition-colors"
+												href="#"
+											>
+												<img
+													src="./images/icons/gymnastic-icon.svg"
+													alt="icon"
+												/>
+												Gymnastics
 											</a>
 										</li>
 									</ul>
@@ -72,43 +124,73 @@
 							</li>
 
 							<!-- Menu Item With Submenu -->
-							<li class="menu-link group relative">
+							<li class="menu-link group relative py-6">
 								<a href="#" class="flex items-center gap-1">
-									<span class="text-brown-800 text-[15px] uppercase">
+									<span
+										class="text-brown-800 text-[15px] uppercase group-hover:text-[#0550B5]"
+									>
 										Company
 									</span>
-									<img
+									<svg
 										class="transition-transform group-hover:rotate-180"
-										src="./images/global/chevron-down.svg"
-										alt="icon"
-									/>
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+									>
+										<path
+											class="transition-colors group-hover:stroke-[#0550B5]"
+											d="M4 6L8 10L12 6"
+											stroke="#281D1B"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
 
 									<!-- Submenu | Dropdown -->
 									<ul
-										class="border-brown-800/10 absolute top-full left-0 hidden min-w-max overflow-hidden rounded-lg border bg-white shadow-sm group-hover:grid"
+										class="shadow-dropdown absolute top-full left-0 hidden min-w-[220px] overflow-hidden rounded-lg bg-white px-3 py-1 group-hover:grid"
 									>
-										<li>
+										<li
+											class="border-b-navy/20 border-b py-[6px] last:border-b-0"
+										>
 											<a
-												class="text-brown-800/80 hover:text-brown-800 flex px-4 py-2 text-sm uppercase transition-colors hover:bg-gray-100"
+												class="text-navy hover:text-brown-800 flex gap-2.5 rounded-md px-1 py-[6px] text-xl tracking-[#-0.837px] transition-colors"
 												href="#"
 											>
-												Nike
+												About Us
 											</a>
 										</li>
-										<li>
+										<li
+											class="border-b-navy/20 border-b py-[6px] last:border-b-0"
+										>
 											<a
-												class="text-brown-800/80 hover:text-brown-800 flex px-4 py-2 text-sm uppercase transition-colors hover:bg-gray-100"
+												class="text-navy hover:text-brown-800 flex gap-2.5 rounded-md px-1 py-[6px] text-xl tracking-[#-0.837px] transition-colors"
 												href="#"
 											>
-												Reebok
+												Careers
 											</a>
 										</li>
-										<li>
+										<li
+											class="border-b-navy/20 border-b py-[6px] last:border-b-0"
+										>
 											<a
-												class="text-brown-800/80 hover:text-brown-800 flex px-4 py-2 text-sm uppercase transition-colors hover:bg-gray-100"
+												class="text-navy hover:text-brown-800 flex gap-2.5 rounded-md px-1 py-[6px] text-xl tracking-[#-0.837px] transition-colors"
 												href="#"
 											>
-												Adidas
+												Press
+											</a>
+										</li>
+										<li
+											class="border-b-navy/20 border-b py-[6px] last:border-b-0"
+										>
+											<a
+												class="text-navy hover:text-brown-800 flex gap-2.5 rounded-md px-1 py-[6px] text-xl tracking-[#-0.837px] transition-colors"
+												href="#"
+											>
+												Blog
 											</a>
 										</li>
 									</ul>
